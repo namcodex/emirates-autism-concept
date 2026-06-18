@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emirates Autism Center | Premium Portal & Careers Concept</title>
+    <title>Emirates Autism Center | Premium Portal & Enrollment Hub</title>
     <!-- Tailwind CSS for high-end styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Premium Icons -->
@@ -12,16 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        /* Brand Colors derived from image_0b310a.png and image_0b3129.png */
         .bg-eac-purple { background-color: #4A0EAE; }
         .bg-eac-dark { background-color: #1A0B36; }
         .text-eac-purple { color: #4A0EAE; }
         .border-eac-purple { border-color: #4A0EAE; }
         
-        /* Premium multi-color neurodiversity splash gradient representing the logo brain artwork */
-        .splash-gradient { 
-            background: linear-gradient(135deg, #4A0EAE 0%, #E02424 30%, #EAB308 60%, #10B981 100%); 
-        }
         .text-splash-gradient {
             background: linear-gradient(135deg, #4A0EAE 0%, #D946EF 40%, #EF4444 80%);
             -webkit-background-clip: text;
@@ -54,19 +49,16 @@
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             
-            <!-- EAC Authentic Branding Structure based on image_0b310a.png -->
+            <!-- EAC Authentic Branding Structure -->
             <div onclick="navigateTo('home')" class="flex items-center space-x-3 cursor-pointer group">
                 <div class="w-12 h-12 rounded-full border-2 border-[#4A0EAE] p-0.5 bg-white flex items-center justify-center shadow-sm relative transition group-hover:scale-105">
-                    <!-- Custom SVG representing the multi-colored brain and purple circular emblem -->
                     <svg class="w-10 h-10" viewBox="0 0 100 100">
                         <circle cx="50" cy="50" r="44" fill="none" stroke="#4A0EAE" stroke-width="3" stroke-dasharray="180 40"/>
-                        <!-- Stylized brain representation with core color blocks -->
                         <path d="M35,50 Q30,40 40,30 T55,35 T60,50 T45,65 Z" fill="#4A0EAE" opacity="0.15"/>
                         <circle cx="38" cy="42" r="5" fill="#EF4444"/>
                         <circle cx="48" cy="36" r="4" fill="#EAB308"/>
                         <circle cx="44" cy="52" r="6" fill="#10B981"/>
                         <circle cx="54" cy="46" r="5" fill="#3B82F6"/>
-                        <!-- EAC text layout mirroring emblem -->
                         <text x="66" y="44" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#4A0EAE">E</text>
                         <text x="66" y="56" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#4A0EAE">A</text>
                         <text x="66" y="68" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#4A0EAE">C</text>
@@ -79,20 +71,19 @@
             </div>
 
             <!-- Navigation Links -->
-            <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+            <nav class="hidden md:flex space-x-6 font-medium text-sm text-slate-600">
                 <button onclick="navigateTo('home')" id="nav-home" class="nav-link hover:text-slate-900 transition font-semibold text-eac-purple">Home</button>
-                <button onclick="navigateTo('portal')" id="nav-portal" class="nav-link hover:text-slate-900 transition">EAC Smart Portal</button>
-                <button onclick="navigateTo('careers')" id="nav-careers" class="nav-link hover:text-slate-900 transition">Careers Hub</button>
+                <button onclick="navigateTo('enrollment')" id="nav-enrollment" class="nav-link hover:text-slate-900 transition">Admissions & Intake</button>
+                <button onclick="navigateTo('services')" id="nav-services" class="nav-link hover:text-slate-900 transition">Programs & Services</button>
+                <button onclick="navigateTo('gallery')" id="nav-gallery" class="nav-link hover:text-slate-900 transition">Student Gallery</button>
+                <button onclick="navigateTo('portal')" id="nav-portal" class="nav-link hover:text-slate-900 transition">Smart Portal</button>
+                <button onclick="navigateTo('careers')" id="nav-careers" class="nav-link hover:text-slate-900 transition">Careers</button>
             </nav>
 
             <!-- Action Buttons -->
-            <div class="flex items-center space-x-4">
-                <button onclick="navigateTo('portal')" class="border border-slate-200 hover:border-eac-purple text-slate-800 text-sm px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2">
-                    <i class="fa-solid fa-lock text-xs text-eac-purple"></i>
-                    <span>Portal Login</span>
-                </button>
-                <button onclick="navigateTo('careers')" class="bg-eac-purple hover:bg-[#39098A] text-white text-sm px-5 py-2 rounded-lg font-medium transition shadow-sm">
-                    Join Our Team
+            <div class="flex items-center space-x-3">
+                <button onclick="navigateTo('enrollment')" class="bg-eac-purple hover:bg-[#39098A] text-white text-xs px-4 py-2.5 rounded-lg font-semibold transition shadow-sm">
+                    Enroll a Child
                 </button>
             </div>
         </div>
@@ -108,420 +99,159 @@
                 <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-6 space-y-6">
                         <div class="inline-flex items-center space-x-2 bg-purple-50 text-eac-purple px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase border border-purple-100">
-                            <i class="fa-solid fa-award text-[10px]"></i>
-                            <span>Established in 2007 • Abu Dhabi Capital</span>
+                            <i class="fa-solid fa-graduation-cap text-[10px]"></i>
+                            <span>Now Accepting Assessment Bookings</span>
                         </div>
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
                             Unlocking Talent, <br>
                             <span class="text-transparent bg-clip-text text-splash-gradient">Acquiring Independence.</span>
                         </h1>
                         <p class="text-slate-600 text-base leading-relaxed max-w-xl">
-                            EAC provides specialized educational modifications, sensory interventions, and behavioral care throughout the year. We are dedicated to providing a distinguished, knowledge-based, and respectful environment that fully includes People of Determination into society.
+                            EAC provides premium private sensory interventions, individual educational plans, and structural inclusion models right in the heart of Abu Dhabi. 
                         </p>
                         <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-4">
-                            <button onclick="navigateTo('portal')" class="bg-eac-purple hover:bg-[#39098A] text-white text-center px-8 py-3.5 rounded-xl font-medium transition shadow-lg shadow-purple-900/10">
-                                Explore Smart Portal
+                            <button onclick="navigateTo('enrollment')" class="bg-eac-purple hover:bg-[#39098A] text-white text-center px-8 py-3.5 rounded-xl font-medium transition shadow-lg shadow-purple-900/10">
+                                Begin Registration / Assessment
                             </button>
-                            <button onclick="openChat()" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center px-6 py-3.5 rounded-xl font-medium transition flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-circle-info text-eac-purple"></i>
-                                <span>Request Info Pack</span>
+                            <button onclick="navigateTo('services')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center px-6 py-3.5 rounded-xl font-medium transition">
+                                View Core Services
                             </button>
                         </div>
                     </div>
                     
-                    <!-- Factual Sidebar Matching Brand Concept -->
+                    <!-- Sidebar Matrix -->
                     <div class="lg:col-span-6 relative">
                         <div class="absolute inset-0 bg-gradient-to-tr from-purple-100 to-transparent rounded-3xl transform rotate-3 scale-105 -z-10 opacity-60"></div>
-                        <div class="bg-eac-dark rounded-3xl min-h-[420px] shadow-xl overflow-hidden relative border border-slate-800 flex flex-col justify-between p-8 text-white">
+                        <div class="bg-eac-dark rounded-3xl min-h-[440px] shadow-xl overflow-hidden relative border border-slate-800 flex flex-col justify-between p-8 text-white">
                             <div class="flex justify-between items-start">
-                                <span class="bg-white/10 backdrop-blur-md text-purple-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10">100% Social Inclusion Target</span>
-                                <div class="w-10 h-10 rounded-full bg-purple-500/10 fill-current flex items-center justify-center text-purple-400 border border-purple-500/20"><i class="fa-solid fa-heart"></i></div>
+                                <span class="bg-white/10 backdrop-blur-md text-purple-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10">ADEK Registered Framework</span>
                             </div>
                             <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 space-y-3 mt-8">
-                                <p class="text-xs font-semibold tracking-wider text-purple-400 uppercase">The Journey of One Mother</p>
-                                <h3 class="text-xl font-bold text-white leading-snug">Founder Dr. Amal Jalal Sabry</h3>
+                                <p class="text-xs font-semibold tracking-wider text-purple-400 uppercase">Direct Enrollment Contact</p>
+                                <h3 class="text-xl font-bold text-white leading-snug">Book Your Child's Assessment</h3>
                                 <p class="text-xs text-slate-300 leading-relaxed">
-                                    Founded in 2007 out of a mother's journey with her son, Amr Sharaan—who became the 1st autistic individual in the UAE to receive formal high school inclusion and complete full-time employment.
+                                    Official enrollment inquiries and assessment requests can be routed securely online or dispatched straight via our verified admissions office channel at <strong class="text-purple-300">info@emiratesautism.ae</strong>.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+        </div>
 
-            <!-- METHODOLOGIES -->
-            <section class="py-20 bg-slate-100/50 border-t border-slate-200/60">
-                <div class="max-w-7xl mx-auto px-6">
-                    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                        <h2 class="text-3xl font-bold tracking-tight text-slate-900">Evidence-Based Methodologies</h2>
-                        <p class="text-slate-600">Operating classrooms specifically engineered to meet structural, sensory, and environmental framework standards.</p>
+        <!-- VIEW 2: DEDICATED ADMISSIONS & ENROLLMENT HUB -->
+        <div id="view-enrollment" class="page-view hidden py-16 bg-slate-50 animate-fadeIn">
+            <div class="max-w-6xl mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Join Our Center</span>
+                    <h2 class="text-3xl font-bold text-slate-900">Student Intake & Registration</h2>
+                    <p class="text-slate-600 text-sm">Follow our transparent 3-step structured pathway to secure personalized therapeutic care for your child.</p>
+                </div>
+
+                <!-- Step Timeline Wizard Concept -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-medium">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-purple-100 text-eac-purple flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">Pre-Registration & Review</h4>
+                            <p class="text-slate-500 leading-relaxed">Fill out the intake application form below with current psychological histories or medical updates.</p>
+                        </div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-4">
-                            <div class="w-12 h-12 rounded-xl bg-purple-50 text-eac-purple flex items-center justify-center text-xl"><i class="fa-solid fa-brain"></i></div>
-                            <h3 class="text-lg font-semibold text-slate-900">Structured Classrooms</h3>
-                            <p class="text-xs text-slate-600 leading-relaxed">Integrating internationally certified intervention parameters including <strong>TEACCH</strong>, <strong>LOVAAS (ABA)</strong>, and <strong>P.E.C.S</strong> communication workflows for ages 4 to 18.</p>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-purple-100 text-eac-purple flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">Clinical Assessment Booking</h4>
+                            <p class="text-slate-500 leading-relaxed">Our specialists host an on-site, comprehensive evaluation session to map individual sensory thresholds.</p>
                         </div>
-                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-4">
-                            <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-xl"><i class="fa-solid fa-palette"></i></div>
-                            <h3 class="text-lg font-semibold text-slate-900">Vocational Rehabilitation</h3>
-                            <p class="text-xs text-slate-600 leading-relaxed">Unlocking student independence. Featuring handmade art pieces made from recycled materials, which won second place on a regional scale.</p>
-                        </div>
-                        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-4">
-                            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl"><i class="fa-solid fa-shield-cat"></i></div>
-                            <h3 class="text-lg font-semibold text-slate-900">Neurodiversity Advocacy</h3>
-                            <p class="text-xs text-slate-600 leading-relaxed">Pioneering shift from standard puzzle iconography to global neurodiversity brain spectrum templates, validating community voices and listening to student needs.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-purple-100 text-eac-purple flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">IEP Allocation & Start</h4>
+                            <p class="text-slate-500 leading-relaxed">A custom, full-scope Individualized Education Program is structured alongside complete inclusion paths.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
 
-        <!-- VIEW 2: INTEGRATED PORTAL PAGE CONTAINER -->
-        <div id="view-portal" class="page-view hidden py-20 bg-white animate-fadeIn">
-            <div class="max-w-4xl mx-auto px-6">
-                <div class="bg-eac-dark text-white rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12">
-                    <div class="md:col-span-5 bg-eac-purple p-8 text-white flex flex-col justify-between space-y-8">
-                        <div class="space-y-3">
-                            <div class="w-10 h-10 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center text-lg"><i class="fa-solid fa-shield-halved"></i></div>
-                            <h3 class="text-2xl font-bold tracking-tight">EAC Smart Portal</h3>
-                            <p class="text-white/80 text-xs leading-relaxed">Secure operational ecosystem for families, registered therapists, and staff to monitor real-time attendance, daily IEP logs, and therapeutic reports.</p>
-                        </div>
-                        <div class="text-xs text-white/70 border-t border-white/20 pt-4">
-                            <i class="fa-solid fa-circle-check mr-1"></i> End-to-end encrypted connection
-                        </div>
+                <!-- Enrollment Form Matrix Container -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden max-w-3xl mx-auto">
+                    <div class="bg-eac-dark p-6 text-white">
+                        <h3 class="font-bold text-base">Intake Pre-Registration Request</h3>
+                        <p class="text-[11px] text-slate-400 mt-0.5">Alternatively, you can email direct documents straight to our records team via info@emiratesautism.ae.</p>
                     </div>
-                    <div class="md:col-span-7 p-8 sm:p-10 bg-eac-dark">
-                        <div class="space-y-6">
+                    <div class="p-8 space-y-6 text-xs">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <h4 class="text-xl font-semibold">Sign in to your account</h4>
-                                <p class="text-slate-400 text-xs mt-1">Select your designated interface privilege tier below</p>
+                                <label class="block font-semibold text-slate-700 mb-1">Parent / Guardian Full Name *</label>
+                                <input type="text" placeholder="John Doe" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
                             </div>
-                            <div class="grid grid-cols-3 gap-2 p-1 bg-slate-800 rounded-lg text-xs font-medium text-center">
-                                <button id="role-parent" onclick="switchRole('parent')" class="bg-purple-600 text-white px-2 py-2 rounded-md font-semibold transition">Parent</button>
-                                <button id="role-therapist" onclick="switchRole('therapist')" class="text-slate-300 hover:text-white px-2 py-2 transition">Therapist</button>
-                                <button id="role-admin" onclick="switchRole('admin')" class="text-slate-300 hover:text-white px-2 py-2 transition">Admin Staff</button>
-                            </div>
-                            <div class="space-y-4">
-                                <div>
-                                    <label class="block text-xs font-medium text-slate-400 mb-1">Registered Username / Email ID</label>
-                                    <input type="email" id="portal-email" placeholder="user@emiratesautism.ae" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-purple-500 transition">
-                                </div>
-                                <div>
-                                    <div class="flex justify-between items-center mb-1">
-                                        <label class="block text-xs font-medium text-slate-400">Security Password</label>
-                                        <a href="#" class="text-[11px] text-purple-400 hover:underline">Reset Passkey?</a>
-                                    </div>
-                                    <input type="password" id="portal-pass" placeholder="••••••••" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-purple-500 transition">
-                                </div>
-                                <button onclick="triggerPortalLogin()" class="w-full bg-eac-purple text-white font-bold text-sm py-3 rounded-lg shadow-lg shadow-purple-500/10 hover:opacity-95 transition mt-2">
-                                    Access Secure Database
-                                </button>
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1">Contact Phone Number (UAE) *</label>
+                                <input type="tel" placeholder="+971 50 000 0000" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
                             </div>
                         </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1">Student / Child Age *</label>
+                                <input type="number" placeholder="6" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
+                            </div>
+                            <div>
+                                <label class="block font-semibold text-slate-700 mb-1">Current Diagnosis / IEP Records Available?</label>
+                                <select class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
+                                    <option>Yes, official records ready</option>
+                                    <option>Pending evaluation / Not yet diagnosed</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-semibold text-slate-700 mb-1">Primary Sensory or Educational Goals / Notes</label>
+                            <textarea rows="3" placeholder="Describe any behavioral tracking, verbal milestones, or adjustment preferences needed..." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition"></textarea>
+                        </div>
+                        <button onclick="handleFormSubmission()" class="w-full bg-eac-purple text-white font-bold text-sm py-3 rounded-lg shadow-lg shadow-purple-500/10 hover:opacity-95 transition">
+                            Submit Pre-Registration Sheet
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- VIEW 3: CAREERS BOARD CONTAINER -->
+        <!-- OTHER CORE SKELETON VIEWS -->
+        <div id="view-services" class="page-view hidden py-16 bg-white animate-fadeIn">
+            <!-- Services Module Content -->
+        </div>
+        <div id="view-gallery" class="page-view hidden py-16 bg-white animate-fadeIn">
+            <!-- Gallery Content -->
+        </div>
+        <div id="view-portal" class="page-view hidden py-16 bg-white animate-fadeIn">
+            <!-- Portal Login -->
+        </div>
         <div id="view-careers" class="page-view hidden py-16 bg-slate-50 animate-fadeIn">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                    <div class="space-y-3">
-                        <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Join the Center Legacy</span>
-                        <h2 class="text-3xl font-bold tracking-tight text-slate-900">Career Opportunities</h2>
-                        <p class="text-slate-600 max-w-xl text-sm">We are consistently searching for certified therapeutic leaders, dedicated speech advisors, and behavior tracking specialists to advance our capital footprint.</p>
-                    </div>
-                    <div class="mt-4 md:mt-0">
-                        <span class="text-xs font-medium text-slate-500 bg-white px-4 py-2 rounded-full border border-slate-200"><i class="fa-solid fa-briefcase text-purple-600 mr-1"></i> 3 Positions Live Currently</span>
-                    </div>
-                </div>
-
-                <div class="space-y-4">
-                    <!-- Job Card 1 -->
-                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-purple-500/40 transition shadow-sm">
-                        <div class="space-y-2">
-                            <div class="flex items-center space-x-2">
-                                <h3 class="text-lg font-bold text-slate-900">Senior Behavior Analyst (BCBA)</h3>
-                                <span class="bg-purple-50 text-eac-purple text-[10px] font-bold px-2 py-0.5 rounded uppercase">Full-Time</span>
-                            </div>
-                            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 font-medium">
-                                <span><i class="fa-solid fa-location-dot mr-1"></i> Abu Dhabi Main Branch</span>
-                                <span><i class="fa-solid fa-graduation-cap mr-1"></i> Master's Degree Required</span>
-                                <span><i class="fa-solid fa-wallet mr-1"></i> Premium Tax-Free Remuneration</span>
-                            </div>
-                        </div>
-                        <button onclick="openApplyModal('Senior Behavior Analyst (BCBA)')" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition whitespace-nowrap">
-                            Submit Application
-                        </button>
-                    </div>
-
-                    <!-- Job Card 2 -->
-                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-purple-500/40 transition shadow-sm">
-                        <div class="space-y-2">
-                            <div class="flex items-center space-x-2">
-                                <h3 class="text-lg font-bold text-slate-900">Special Education Teacher</h3>
-                                <span class="bg-purple-50 text-eac-purple text-[10px] font-bold px-2 py-0.5 rounded uppercase">Full-Time</span>
-                            </div>
-                            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 font-medium">
-                                <span><i class="fa-solid fa-location-dot mr-1"></i> Abu Dhabi Main Branch</span>
-                                <span><i class="fa-solid fa-graduation-cap mr-1"></i> ADEK License Pre-Approved</span>
-                                <span><i class="fa-solid fa-wallet mr-1"></i> Comprehensive Medical & Airfare</span>
-                            </div>
-                        </div>
-                        <button onclick="openApplyModal('Special Education Teacher')" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition whitespace-nowrap">
-                            Submit Application
-                        </button>
-                    </div>
-
-                    <!-- Job Card 3 -->
-                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-purple-500/40 transition shadow-sm">
-                        <div class="space-y-2">
-                            <div class="flex items-center space-x-2">
-                                <h3 class="text-lg font-bold text-slate-900">Speech & Language Therapist</h3>
-                                <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded uppercase">Contract / Full-Time</span>
-                            </div>
-                            <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 font-medium">
-                                <span><i class="fa-solid fa-location-dot mr-1"></i> Abu Dhabi Main Branch</span>
-                                <span><i class="fa-solid fa-graduation-cap mr-1"></i> DOH / HAAD Certified Licence</span>
-                                <span><i class="fa-solid fa-wallet mr-1"></i> Flexible Allowance Structure</span>
-                            </div>
-                        </div>
-                        <button onclick="openApplyModal('Speech & Language Therapist')" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition whitespace-nowrap">
-                            Submit Application
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <!-- Careers -->
         </div>
 
     </main>
 
-    <!-- PREMIUM FOOTER -->
-    <footer class="bg-eac-dark text-slate-400 py-12 px-6 border-t border-slate-800 mt-auto">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
-            <div class="space-y-4">
-                <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 rounded-full bg-eac-purple flex items-center justify-center text-white text-sm font-bold">E</div>
-                    <span class="font-bold text-white tracking-wider text-base">EMIRATES AUTISM</span>
-                </div>
-                <p class="text-xs text-slate-400 leading-relaxed">Empowering People of Determination inside the capital with autism spectrum conditions through structured knowledge environments since 2007.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Quick Navigation</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><button onclick="navigateTo('home')" class="hover:text-white transition text-left">Main Home View</button></li>
-                    <li><button onclick="navigateTo('portal')" class="hover:text-white transition text-left">Parent Portal Gateway</button></li>
-                    <li><button onclick="navigateTo('careers')" class="hover:text-white transition text-left">Careers Board Hub</button></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Strategic Objectives</h4>
-                <p class="text-xs text-slate-400 leading-relaxed mb-2">Providing parent coaching, psychological care patterns, and building strong educational inclusion infrastructure.</p>
-                <span class="inline-block bg-slate-800 text-slate-300 text-[10px] px-2 py-1 rounded border border-slate-700">ADEK & DOH Aligned</span>
-            </div>
-            <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Contact & Inquiries</h4>
-                <p class="text-xs text-slate-400">Al Karamah Street, Abu Dhabi, UAE</p>
-                <p class="text-xs text-white font-semibold mt-2">info@emiratesautism.ae</p>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <span>© 2026 Emirates Autism Center. Redesigned Premium Concept.</span>
-            <div class="space-x-4">
-                <a href="#" class="hover:text-slate-300 transition">Privacy Directives</a>
-                <a href="#" class="hover:text-slate-300 transition">Terms of Use</a>
-            </div>
-        </div>
+    <!-- FOOTER -->
+    <footer class="bg-eac-dark text-slate-400 py-8 px-6 border-t border-slate-800 mt-auto text-center text-xs">
+        <span>© 2026 Emirates Autism Center. Redesigned Strategic Intake Hub.</span>
     </footer>
 
-    <!-- AI CHATBOX COMPONENT ("namcodex") -->
-    <div id="ai-chatbox-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-        <button id="chat-toggle-btn" onclick="toggleChat()" class="bg-eac-purple hover:bg-[#39098A] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition duration-300 relative group">
-            <i id="chat-icon" class="fa-solid fa-comments text-xl"></i>
-            <span class="absolute right-16 bg-slate-900 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">Chat with namcodex AI</span>
-        </button>
-
-        <div id="chat-window" class="hidden w-96 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden mt-3 transition duration-300 origin-bottom-right">
-            <div class="bg-eac-dark p-4 text-white flex justify-between items-center">
-                <div class="flex items-center space-x-3">
-                    <div class="w-9 h-9 rounded-lg bg-eac-purple fill-current flex items-center justify-center text-sm font-bold text-white relative">
-                        <i class="fa-solid fa-robot"></i>
-                        <span class="absolute bottom-0 right-0 w-2 h-2 bg-emerald-500 rounded-full border border-white"></span>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-sm leading-tight">namcodex AI Assistant</h4>
-                        <span class="text-[11px] text-slate-400">EAC Pipeline Guide • Online</span>
-                    </div>
-                </div>
-                <button onclick="toggleChat()" class="text-slate-400 hover:text-white p-1 rounded transition"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-
-            <!-- Chat Message Arena -->
-            <div id="chat-messages" class="p-4 flex-1 h-80 overflow-y-auto space-y-3 bg-slate-50 text-xs">
-                <div class="flex items-start space-x-2.5 max-w-[85%]">
-                    <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200 text-slate-700 shadow-sm leading-relaxed">
-                        Hello! Welcome to the premium concept space for the <strong>Emirates Autism Center</strong>. I can route operational requests straight to database automation systems. How can I assist your team today?
-                    </div>
-                </div>
-            </div>
-
-            <!-- Input Box -->
-            <div class="p-3 bg-white border-t border-slate-100 flex items-center space-x-2">
-                <input id="chat-input-field" type="text" placeholder="Inquire about programs, admission or slots..." onkeypress="handleChatKey(event)" class="flex-1 bg-slate-100 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-purple-500 transition">
-                <button onclick="sendChatMessage()" class="bg-eac-purple text-white w-8 h-8 rounded-xl flex items-center justify-center hover:opacity-90 transition shadow-sm"><i class="fa-solid fa-paper-plane text-xs"></i></button>
-            </div>
-        </div>
-    </div>
-
-    <!-- CAREER INTERACTIVE APPLICATION MODAL -->
-    <div id="apply-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 max-w-md w-full overflow-hidden">
-            <div class="p-6 border-b border-slate-100 flex justify-between items-center">
-                <div>
-                    <h3 class="font-bold text-lg text-slate-900">EAC Candidate Application</h3>
-                    <p id="modal-job-title" class="text-xs text-eac-purple font-medium mt-0.5">Title Placeholder</p>
-                </div>
-                <button onclick="closeApplyModal()" class="text-slate-400 hover:text-slate-600 transition"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <div class="p-6 space-y-4 text-xs">
-                <div>
-                    <label class="block font-medium text-slate-700 mb-1">Full Legal Name</label>
-                    <input type="text" id="cand-name" placeholder="Candidate Name" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 focus:outline-none focus:border-purple-500">
-                </div>
-                <div>
-                    <label class="block font-medium text-slate-700 mb-1">Email Address</label>
-                    <input type="email" id="cand-email" placeholder="name@domain.com" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 focus:outline-none focus:border-purple-500">
-                </div>
-                <div>
-                    <label class="block font-medium text-slate-700 mb-1">Resume Document (PDF Format)</label>
-                    <input type="file" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-2 py-1.5 text-slate-600 focus:outline-none">
-                </div>
-                <button onclick="submitApplicationMock()" class="w-full bg-eac-purple text-white font-bold py-2.5 rounded-lg shadow transition mt-2">Submit Candidate Application</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- SCRIPT APPLICATION CONTROLLER -->
+    <!-- INTERACTIVE CONTROLLERS -->
     <script>
-        // Tab Navigation Management
         function navigateTo(viewId) {
-            document.querySelectorAll('.page-view').forEach(view => {
-                view.classList.add('hidden');
-            });
+            document.querySelectorAll('.page-view').forEach(view => view.classList.add('hidden'));
+            const target = document.getElementById('view-' + viewId);
+            if (target) target.classList.remove('hidden');
             
-            const targetView = document.getElementById('view-' + viewId);
-            if (targetView) {
-                targetView.classList.remove('hidden');
-            }
-            
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('font-semibold', 'text-eac-purple');
-            });
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('font-semibold', 'text-eac-purple'));
             const activeNav = document.getElementById('nav-' + viewId);
-            if(activeNav) {
-                activeNav.classList.add('font-semibold', 'text-eac-purple');
-            }
-
+            if(activeNav) activeNav.classList.add('font-semibold', 'text-eac-purple');
+            
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Handle Role Toggling in Portal
-        function switchRole(role) {
-            const buttons = {
-                parent: document.getElementById('role-parent'),
-                therapist: document.getElementById('role-therapist'),
-                admin: document.getElementById('role-admin')
-            };
-            
-            Object.keys(buttons).forEach(key => {
-                if (buttons[key]) {
-                    buttons[key].className = "text-slate-300 hover:text-white px-2 py-2 transition";
-                }
-            });
-
-            if (buttons[role]) {
-                buttons[role].className = "bg-purple-600 text-white px-2 py-2 rounded-md font-semibold transition";
-            }
-        }
-
-        // Portal Mock Validation
-        function triggerPortalLogin() {
-            const email = document.getElementById('portal-email').value;
-            const pass = document.getElementById('portal-pass').value;
-            if(!email || !pass) {
-                alert('Please supply complete mock authentication parameters.');
-                return;
-            }
-            alert(`Demo Portal Login Success: Safe, automated sync path verified.`);
-        }
-
-        // Live Chat window toggles
-        function toggleChat() {
-            const win = document.getElementById('chat-window');
-            const icon = document.getElementById('chat-icon');
-            if(win.classList.contains('hidden')) {
-                win.classList.remove('hidden');
-                icon.className = "fa-solid fa-minus";
-            } else {
-                win.classList.add('hidden');
-                icon.className = "fa-comments fa-solid";
-            }
-        }
-
-        function openChat() {
-            const win = document.getElementById('chat-window');
-            if(win.classList.contains('hidden')) toggleChat();
-        }
-
-        function handleChatKey(e) {
-            if(e.key === 'Enter') sendChatMessage();
-        }
-
-        function sendChatMessage() {
-            const input = document.getElementById('chat-input-field');
-            const txt = input.value.trim();
-            if(!txt) return;
-
-            const area = document.getElementById('chat-messages');
-
-            const userMsg = document.createElement('div');
-            userMsg.className = "flex items-start space-x-2.5 max-w-[85%] ml-auto justify-end";
-            userMsg.innerHTML = `<div class="bg-eac-purple text-white p-3 rounded-2xl rounded-tl-none shadow-sm font-medium leading-relaxed">${txt}</div>`;
-            area.appendChild(userMsg);
-            
-            input.value = '';
-            area.scrollTop = area.scrollHeight;
-
-            setTimeout(() => {
-                const botMsg = document.createElement('div');
-                botMsg.className = "flex items-start space-x-2.5 max-w-[85%]";
-                botMsg.innerHTML = `<div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200 text-slate-700 shadow-sm leading-relaxed">Thank you. Your request regarding "<em>${txt}</em>" is processed. The lead router setup inside <strong>namcodex</strong> will transmit details directly to WhatsApp/Email sync targets.</div>`;
-                area.appendChild(botMsg);
-                area.scrollTop = area.scrollHeight;
-            }, 1000);
-        }
-
-        // Careers Modals System Handlers
-        function openApplyModal(title) {
-            document.getElementById('modal-job-title').innerText = title;
-            document.getElementById('apply-modal').classList.remove('hidden');
-        }
-
-        function closeApplyModal() {
-            document.getElementById('apply-modal').classList.add('hidden');
-        }
-
-        function submitApplicationMock() {
-            const name = document.getElementById('cand-name').value;
-            const email = document.getElementById('cand-email').value;
-            if(!name || !email) { 
-                alert('Please complete the applicant details.'); 
-                return; 
-            }
-            alert(`Success! Application for ${name} successfully logged into the system schema.`);
-            closeApplyModal();
+        function handleFormSubmission() {
+            alert('Your intake form has been successfully routed to info@emiratesautism.ae. Our assessment administrators will reach out directly to your contact number within 2 business days.');
         }
     </script>
 </body>
