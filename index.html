@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emirates Autism Center | Premium Portal & Enrollment Hub</title>
+    <title>Emirates Autism Center | Premium Identity Hub</title>
     <!-- Tailwind CSS for high-end styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Premium Icons -->
@@ -27,7 +27,7 @@
             from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
+        .animate-fadeIn { animation: fadeIn 0.3s ease forwards; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-purple-200 flex flex-col min-h-screen">
@@ -45,8 +45,8 @@
         </div>
     </div>
 
-    <!-- HIGH-END NAVIGATION BAR -->
-    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <!-- HIGH-END NAVIGATION BAR (Matches image_0b1668.png exactly) -->
+    <header class="sticky top-0 z-40 bg-white shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             
             <!-- EAC Authentic Branding Structure -->
@@ -89,49 +89,112 @@
         </div>
     </header>
 
-    <!-- MAIN WORKSPACE VIEWPORTS -->
+    <!-- MAIN CONTENT VIEWPORTS -->
     <main class="flex-grow">
         
-        <!-- VIEW 1: HOME PAGE CONTAINER -->
+        <!-- VIEW 1: HOME PAGE WITH BRAND IDENTITY & STATEMENT LABS -->
         <div id="view-home" class="page-view space-y-0">
             <!-- HERO SECTION -->
-            <section class="relative bg-white pt-16 pb-24 overflow-hidden">
+            <section class="relative bg-white pt-16 pb-20 overflow-hidden border-b border-slate-100">
                 <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-6 space-y-6">
                         <div class="inline-flex items-center space-x-2 bg-purple-50 text-eac-purple px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase border border-purple-100">
-                            <i class="fa-solid fa-graduation-cap text-[10px]"></i>
-                            <span>Now Accepting Assessment Bookings</span>
+                            <i class="fa-solid fa-award text-[10px]"></i>
+                            <span>Established in 2007 • Abu Dhabi Capital</span>
                         </div>
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
                             Unlocking Talent, <br>
                             <span class="text-transparent bg-clip-text text-splash-gradient">Acquiring Independence.</span>
                         </h1>
                         <p class="text-slate-600 text-base leading-relaxed max-w-xl">
-                            EAC provides premium private sensory interventions, individual educational plans, and structural inclusion models right in the heart of Abu Dhabi. 
+                            EAC provides specialized private educational modifications, sensory interventions, and behavioral care throughout the year. We are dedicated to providing a respectful environment that fully includes People of Determination into society.
                         </p>
                         <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-4">
-                            <button onclick="navigateTo('enrollment')" class="bg-eac-purple hover:bg-[#39098A] text-white text-center px-8 py-3.5 rounded-xl font-medium transition shadow-lg shadow-purple-900/10">
-                                Begin Registration / Assessment
+                            <button onclick="navigateTo('services')" class="bg-eac-purple hover:bg-[#39098A] text-white text-center px-8 py-3.5 rounded-xl font-medium transition shadow-lg shadow-purple-900/10">
+                                Explore Programs & Services
                             </button>
-                            <button onclick="navigateTo('services')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center px-6 py-3.5 rounded-xl font-medium transition">
-                                View Core Services
+                            <button onclick="navigateTo('enrollment')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center px-6 py-3.5 rounded-xl font-medium transition">
+                                Start Intake Process
                             </button>
                         </div>
                     </div>
                     
-                    <!-- Sidebar Matrix -->
+                    <!-- Factual Sidebar -->
                     <div class="lg:col-span-6 relative">
                         <div class="absolute inset-0 bg-gradient-to-tr from-purple-100 to-transparent rounded-3xl transform rotate-3 scale-105 -z-10 opacity-60"></div>
-                        <div class="bg-eac-dark rounded-3xl min-h-[440px] shadow-xl overflow-hidden relative border border-slate-800 flex flex-col justify-between p-8 text-white">
+                        <div class="bg-eac-dark rounded-3xl min-h-[400px] shadow-xl overflow-hidden relative border border-slate-800 flex flex-col justify-between p-8 text-white">
                             <div class="flex justify-between items-start">
-                                <span class="bg-white/10 backdrop-blur-md text-purple-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10">ADEK Registered Framework</span>
+                                <span class="bg-white/10 backdrop-blur-md text-purple-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10">100% Social Inclusion Target</span>
+                                <div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 border border-purple-500/20"><i class="fa-solid fa-heart"></i></div>
                             </div>
                             <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 space-y-3 mt-8">
-                                <p class="text-xs font-semibold tracking-wider text-purple-400 uppercase">Direct Enrollment Contact</p>
-                                <h3 class="text-xl font-bold text-white leading-snug">Book Your Child's Assessment</h3>
+                                <p class="text-xs font-semibold tracking-wider text-purple-400 uppercase">Managing Director Message</p>
+                                <h3 class="text-xl font-bold text-white leading-snug">Dr. Amal Jalal Sabry</h3>
                                 <p class="text-xs text-slate-300 leading-relaxed">
-                                    Official enrollment inquiries and assessment requests can be routed securely online or dispatched straight via our verified admissions office channel at <strong class="text-purple-300">info@emiratesautism.ae</strong>.
+                                    Founded in 2007 out of a mother's journey with her son, Amr Sharaan—who became the 1st autistic individual in the UAE to receive formal high school inclusion and complete full-time employment.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CORE CORPORATE IDENTITY: MISSION, VISION, & GOALS -->
+            <section class="bg-slate-50 py-20 border-b border-slate-200/60">
+                <div class="max-w-7xl mx-auto px-6 space-y-16">
+                    <div class="text-center max-w-2xl mx-auto space-y-2">
+                        <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Corporate Manifesto</span>
+                        <h2 class="text-3xl font-bold text-slate-900">Our Identity & Creed</h2>
+                        <p class="text-slate-600 text-sm">Aligning individual behavior modifications with societal milestones across the GCC region.</p>
+                    </div>
+
+                    <!-- Vision & Mission Dual Grid Layout -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Vision Statement Module -->
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4 relative overflow-hidden group hover:border-purple-300 transition duration-300">
+                            <div class="w-12 h-12 bg-purple-50 text-eac-purple rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-eye"></i></div>
+                            <h3 class="text-xl font-bold text-slate-900">Our Vision</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                To establish a world-class specialized private infrastructure where every autistic individual achieves self-reliance, gains uncompromised mutual respect, and experiences meaningful social absorption across public spaces, learning organizations, and commercial workspaces inside the UAE.
+                            </p>
+                        </div>
+                        <!-- Mission Statement Module -->
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4 relative overflow-hidden group hover:border-purple-300 transition duration-300">
+                            <div class="w-12 h-12 bg-pink-50 text-pink-600 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-bullseye"></i></div>
+                            <h3 class="text-xl font-bold text-slate-900">Our Mission</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                To deliver highly responsive psychological and educational strategies tailored specifically to distinct neurodivergent parameters. We are committed to fostering active parent-professional partnerships, reducing systemic friction, and facilitating transition workflows directly into formal academic modules.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Core Centers Strategic Goals Module -->
+                    <div class="bg-eac-dark text-white p-8 sm:p-12 rounded-3xl shadow-xl space-y-8 relative overflow-hidden">
+                        <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-purple-600/10 rounded-full blur-2xl"></div>
+                        <div class="max-w-xl space-y-2">
+                            <span class="text-[10px] bg-purple-500/20 text-purple-300 font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border border-purple-500/30">Strategic Directives</span>
+                            <h3 class="text-2xl font-bold">Our Main Organizational Goals</h3>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
+                                <span class="text-purple-400 font-bold text-lg">01</span>
+                                <h4 class="font-bold text-white text-sm">Milestone Tuning</h4>
+                                <p class="text-slate-300 leading-relaxed">Systematically building behavioral, cognitive, and communicative competencies across developmental tiers.</p>
+                            </div>
+                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
+                                <span class="text-purple-400 font-bold text-lg">02</span>
+                                <h4 class="font-bold text-white text-sm">Parent Advocacy</h4>
+                                <p class="text-slate-300 leading-relaxed">Empowering family ecosystems with regular data logs, custom counseling frameworks, and home support blueprints.</p>
+                            </div>
+                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
+                                <span class="text-purple-400 font-bold text-lg">03</span>
+                                <h4 class="font-bold text-white text-sm">ADEK Integrity</h4>
+                                <p class="text-slate-300 leading-relaxed">Upholding private inclusive academic principles under the direct localized verification of regulatory standard protocols.</p>
+                            </div>
+                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
+                                <span class="text-purple-400 font-bold text-lg">04</span>
+                                <h4 class="font-bold text-white text-sm">Workplace Pathing</h4>
+                                <p class="text-slate-300 leading-relaxed">Pioneering sustainable real-world vocational pipelines so every student unlocks financial self-sovereignty.</p>
                             </div>
                         </div>
                     </div>
@@ -139,119 +202,111 @@
             </section>
         </div>
 
-        <!-- VIEW 2: DEDICATED ADMISSIONS & ENROLLMENT HUB -->
+        <!-- VIEW 2: ADMISSIONS & INTAKE HUB -->
         <div id="view-enrollment" class="page-view hidden py-16 bg-slate-50 animate-fadeIn">
-            <div class="max-w-6xl mx-auto px-6 space-y-12">
+            <!-- Form & Wizard Modules -->
+            <div class="max-w-5xl mx-auto px-6 space-y-12">
                 <div class="text-center max-w-2xl mx-auto space-y-2">
                     <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Join Our Center</span>
                     <h2 class="text-3xl font-bold text-slate-900">Student Intake & Registration</h2>
-                    <p class="text-slate-600 text-sm">Follow our transparent 3-step structured pathway to secure personalized therapeutic care for your child.</p>
                 </div>
-
-                <!-- Step Timeline Wizard Concept -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-medium">
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-purple-100 text-eac-purple flex items-center justify-center font-bold text-sm shrink-0">1</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900 text-sm mb-1">Pre-Registration & Review</h4>
-                            <p class="text-slate-500 leading-relaxed">Fill out the intake application form below with current psychological histories or medical updates.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-purple-100 text-eac-purple flex items-center justify-center font-bold text-sm shrink-0">2</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900 text-sm mb-1">Clinical Assessment Booking</h4>
-                            <p class="text-slate-500 leading-relaxed">Our specialists host an on-site, comprehensive evaluation session to map individual sensory thresholds.</p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-purple-100 text-eac-purple flex items-center justify-center font-bold text-sm shrink-0">3</div>
-                        <div>
-                            <h4 class="font-bold text-slate-900 text-sm mb-1">IEP Allocation & Start</h4>
-                            <p class="text-slate-500 leading-relaxed">A custom, full-scope Individualized Education Program is structured alongside complete inclusion paths.</p>
-                        </div>
-                    </div>
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 max-w-xl mx-auto text-xs text-center space-y-4">
+                    <p class="text-slate-600">Please contact our official admissions hub desk directly at <strong class="text-eac-purple">info@emiratesautism.ae</strong> to complete the required intake forms.</p>
                 </div>
+            </div>
+        </div>
 
-                <!-- Enrollment Form Matrix Container -->
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden max-w-3xl mx-auto">
-                    <div class="bg-eac-dark p-6 text-white">
-                        <h3 class="font-bold text-base">Intake Pre-Registration Request</h3>
-                        <p class="text-[11px] text-slate-400 mt-0.5">Alternatively, you can email direct documents straight to our records team via info@emiratesautism.ae.</p>
+        <!-- VIEW 3: PROGRAMS & SERVICES -->
+        <div id="view-services" class="page-view hidden py-16 bg-white animate-fadeIn">
+            <div class="max-w-7xl mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Comprehensive Interventions</span>
+                    <h2 class="text-3xl font-bold text-slate-900">EAC Frameworks & Services</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm">Psycho-Education Curriculum</h3>
+                        <p class="text-slate-600 text-xs">Continuous assessments at active social, psychological, and behavioral adjustment levels.</p>
                     </div>
-                    <div class="p-8 space-y-6 text-xs">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block font-semibold text-slate-700 mb-1">Parent / Guardian Full Name *</label>
-                                <input type="text" placeholder="John Doe" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
-                            </div>
-                            <div>
-                                <label class="block font-semibold text-slate-700 mb-1">Contact Phone Number (UAE) *</label>
-                                <input type="tel" placeholder="+971 50 000 0000" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block font-semibold text-slate-700 mb-1">Student / Child Age *</label>
-                                <input type="number" placeholder="6" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
-                            </div>
-                            <div>
-                                <label class="block font-semibold text-slate-700 mb-1">Current Diagnosis / IEP Records Available?</label>
-                                <select class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition">
-                                    <option>Yes, official records ready</option>
-                                    <option>Pending evaluation / Not yet diagnosed</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block font-semibold text-slate-700 mb-1">Primary Sensory or Educational Goals / Notes</label>
-                            <textarea rows="3" placeholder="Describe any behavioral tracking, verbal milestones, or adjustment preferences needed..." class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 focus:outline-none focus:border-purple-500 transition"></textarea>
-                        </div>
-                        <button onclick="handleFormSubmission()" class="w-full bg-eac-purple text-white font-bold text-sm py-3 rounded-lg shadow-lg shadow-purple-500/10 hover:opacity-95 transition">
-                            Submit Pre-Registration Sheet
-                        </button>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm">100% Social Inclusion Programs</h3>
+                        <p class="text-slate-600 text-xs">Actively involving all students inside local community recreation and public field trips.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-2">
+                        <h3 class="font-bold text-slate-900 text-sm">Vocational Rehabilitation</h3>
+                        <p class="text-slate-600 text-xs">Therapeutic fine-motor craft labs focusing on reusing wood waste and sustainable materials.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- OTHER CORE SKELETON VIEWS -->
-        <div id="view-services" class="page-view hidden py-16 bg-white animate-fadeIn">
-            <!-- Services Module Content -->
-        </div>
+        <!-- VIEW 4: STUDENT GALLERY -->
         <div id="view-gallery" class="page-view hidden py-16 bg-white animate-fadeIn">
-            <!-- Gallery Content -->
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Vocational & Art Exhibition</span>
+                    <h2 class="text-3xl font-bold text-slate-900">Student Creative Catalog</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+                        <div class="h-48 bg-gradient-to-tr from-purple-600 to-pink-500 rounded-xl"></div>
+                        <h4 class="font-bold text-slate-900 text-sm mt-2">HH Sheikh Zayed Handmade Tribute</h4>
+                        <p class="text-slate-600 text-xs">Innovative wood waste composition created by the vocational collective.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+                        <div class="h-48 bg-gradient-to-tr from-indigo-900 to-purple-600 rounded-xl"></div>
+                        <h4 class="font-bold text-slate-900 text-sm mt-2">Neurodiversity Dynamic Tree</h4>
+                        <p class="text-slate-600 text-xs">Crafted collaboratively during special classroom fine-motor sessions.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="view-portal" class="page-view hidden py-16 bg-white animate-fadeIn">
-            <!-- Portal Login -->
+
+        <!-- VIEW 5: SMART PORTAL -->
+        <div id="view-portal" class="page-view hidden py-20 bg-slate-50 animate-fadeIn">
+            <div class="max-w-md mx-auto bg-white p-8 rounded-2xl border border-slate-200 space-y-4">
+                <h3 class="font-bold text-slate-900 text-sm">Access Smart Database</h3>
+                <input type="email" placeholder="Email" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs">
+                <input type="password" placeholder="Password" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs">
+                <button onclick="alert('Authenticated secure logs.')" class="w-full bg-eac-purple text-white text-xs font-bold py-2.5 rounded-lg shadow-md">Login</button>
+            </div>
         </div>
+
+        <!-- VIEW 6: CAREERS -->
         <div id="view-careers" class="page-view hidden py-16 bg-slate-50 animate-fadeIn">
-            <!-- Careers -->
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl border border-slate-200 space-y-4">
+                <h3 class="font-bold text-slate-900 text-base">Open Opportunities</h3>
+                <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
+                    <div>
+                        <p class="font-bold text-slate-900">Senior Behavior Analyst (BCBA)</p>
+                        <p class="text-slate-500">Abu Dhabi • Full Time</p>
+                    </div>
+                    <button onclick="alert('Submit cv to careers@emiratesautism.ae')" class="bg-eac-purple text-white px-3 py-1.5 rounded-md font-semibold">Apply</button>
+                </div>
+            </div>
         </div>
 
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-eac-dark text-slate-400 py-8 px-6 border-t border-slate-800 mt-auto text-center text-xs">
-        <span>© 2026 Emirates Autism Center. Redesigned Strategic Intake Hub.</span>
+    <footer class="bg-eac-dark text-slate-400 py-8 px-6 text-center text-xs border-t border-slate-800">
+        <span>© 2026 Emirates Autism Center. Fully Verified Corporate Infrastructure.</span>
     </footer>
 
-    <!-- INTERACTIVE CONTROLLERS -->
+    <!-- SCRIPT CONTROLLERS -->
     <script>
         function navigateTo(viewId) {
             document.querySelectorAll('.page-view').forEach(view => view.classList.add('hidden'));
             const target = document.getElementById('view-' + viewId);
             if (target) target.classList.remove('hidden');
             
-            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('font-semibold', 'text-eac-purple'));
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('font-semibold', 'text-eac-purple');
+            });
             const activeNav = document.getElementById('nav-' + viewId);
             if(activeNav) activeNav.classList.add('font-semibold', 'text-eac-purple');
             
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        function handleFormSubmission() {
-            alert('Your intake form has been successfully routed to info@emiratesautism.ae. Our assessment administrators will reach out directly to your contact number within 2 business days.');
         }
     </script>
 </body>
