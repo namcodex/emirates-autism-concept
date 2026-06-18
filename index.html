@@ -12,62 +12,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .gold-gradient { background: linear-gradient(135deg, #B48A46 0%, #D4AF37 100%); }
-        .navy-deep { background-color: #0B192C; }
-        .text-gold { color: #D4AF37; }
-        .border-gold { border-color: #D4AF37; }
+        /* Brand Colors derived from image_0b310a.png and image_0b3129.png */
+        .bg-eac-purple { background-color: #4A0EAE; }
+        .bg-eac-dark { background-color: #1A0B36; }
+        .text-eac-purple { color: #4A0EAE; }
+        .border-eac-purple { border-color: #4A0EAE; }
+        
+        /* Premium multi-color neurodiversity splash gradient representing the logo brain artwork */
+        .splash-gradient { 
+            background: linear-gradient(135deg, #4A0EAE 0%, #E02424 30%, #EAB308 60%, #10B981 100%); 
+        }
+        .text-splash-gradient {
+            background: linear-gradient(135deg, #4A0EAE 0%, #D946EF 40%, #EF4444 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn { animation: fadeIn 0.4s ease forwards; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-200 flex flex-col min-h-screen">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-purple-200 flex flex-col min-h-screen">
 
     <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="navy-deep text-white text-xs py-2 px-6 flex justify-between items-center border-b border-amber-500/20">
+    <div class="bg-eac-dark text-white text-xs py-2 px-6 flex justify-between items-center border-b border-purple-500/20">
         <div class="flex items-center space-x-4">
-            <span><i class="fa-solid fa-location-dot text-gold mr-1"></i> Abu Dhabi, UAE</span>
-            <span><i class="fa-solid fa-phone text-gold mr-1"></i> +971 (0)2 666 0011</span>
+            <span><i class="fa-solid fa-location-dot text-purple-400 mr-1"></i> Al Karamah Street, Abu Dhabi, UAE</span>
+            <span><i class="fa-solid fa-phone text-purple-400 mr-1"></i> +971 (0)2 666 0011</span>
         </div>
         <div class="flex items-center space-x-4">
-            <a href="#" class="hover:text-gold transition">العربية</a>
+            <a href="#" class="hover:text-purple-300 transition">العربية</a>
             <span class="text-slate-500">|</span>
-            <span class="bg-amber-500/10 text-gold px-2 py-0.5 rounded border border-amber-500/30 font-medium">Licensed by ADEK</span>
+            <span class="bg-purple-500/10 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30 font-medium">Licensed by ADEK</span>
         </div>
     </div>
 
     <!-- HIGH-END NAVIGATION BAR -->
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <!-- EAC Premium Branding -->
-            <div onclick="navigateTo('home')" class="flex items-center space-x-3 cursor-pointer">
-                <div class="w-12 h-12 rounded-xl gold-gradient flex items-center justify-center shadow-md shadow-amber-500/20">
-                    <i class="fa-solid fa-hands-holding-child text-white text-xl"></i>
+            
+            <!-- EAC Authentic Branding Structure based on image_0b310a.png -->
+            <div onclick="navigateTo('home')" class="flex items-center space-x-3 cursor-pointer group">
+                <div class="w-12 h-12 rounded-full border-2 border-[#4A0EAE] p-0.5 bg-white flex items-center justify-center shadow-sm relative transition group-hover:scale-105">
+                    <!-- Custom SVG representing the multi-colored brain and purple circular emblem -->
+                    <svg class="w-10 h-10" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="44" fill="none" stroke="#4A0EAE" stroke-width="3" stroke-dasharray="180 40"/>
+                        <!-- Stylized brain representation with core color blocks -->
+                        <path d="M35,50 Q30,40 40,30 T55,35 T60,50 T45,65 Z" fill="#4A0EAE" opacity="0.15"/>
+                        <circle cx="38" cy="42" r="5" fill="#EF4444"/>
+                        <circle cx="48" cy="36" r="4" fill="#EAB308"/>
+                        <circle cx="44" cy="52" r="6" fill="#10B981"/>
+                        <circle cx="54" cy="46" r="5" fill="#3B82F6"/>
+                        <!-- EAC text layout mirroring emblem -->
+                        <text x="66" y="44" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#4A0EAE">E</text>
+                        <text x="66" y="56" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#4A0EAE">A</text>
+                        <text x="66" y="68" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#4A0EAE">C</text>
+                    </svg>
                 </div>
                 <div>
-                    <span class="block font-bold text-xl tracking-tight text-slate-900 leading-none">EMIRATES</span>
-                    <span class="block text-xs font-semibold tracking-widest text-gold uppercase mt-1">Autism Center</span>
+                    <span class="block font-bold text-base tracking-tight text-slate-900 leading-none">EMIRATES AUTISM CENTER</span>
+                    <span class="block text-[10px] font-bold tracking-wider text-eac-purple uppercase mt-1">مركز الإمارات للتوحد ذ.م.م</span>
                 </div>
             </div>
 
             <!-- Navigation Links -->
             <nav class="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
-                <button onclick="navigateTo('home')" id="nav-home" class="nav-link hover:text-slate-900 transition font-semibold text-slate-900">Home</button>
+                <button onclick="navigateTo('home')" id="nav-home" class="nav-link hover:text-slate-900 transition font-semibold text-eac-purple">Home</button>
                 <button onclick="navigateTo('portal')" id="nav-portal" class="nav-link hover:text-slate-900 transition">EAC Smart Portal</button>
                 <button onclick="navigateTo('careers')" id="nav-careers" class="nav-link hover:text-slate-900 transition">Careers Hub</button>
             </nav>
 
             <!-- Action Buttons -->
             <div class="flex items-center space-x-4">
-                <button onclick="navigateTo('portal')" class="border border-slate-200 hover:border-slate-900 text-slate-800 text-sm px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2">
-                    <i class="fa-solid fa-lock text-xs"></i>
+                <button onclick="navigateTo('portal')" class="border border-slate-200 hover:border-eac-purple text-slate-800 text-sm px-4 py-2 rounded-lg font-medium transition flex items-center space-x-2">
+                    <i class="fa-solid fa-lock text-xs text-eac-purple"></i>
                     <span>Portal Login</span>
                 </button>
-                <button onclick="navigateTo('careers')" class="gold-gradient hover:opacity-90 text-white text-sm px-5 py-2 rounded-lg font-medium transition shadow-sm">
+                <button onclick="navigateTo('careers')" class="bg-eac-purple hover:bg-[#39098A] text-white text-sm px-5 py-2 rounded-lg font-medium transition shadow-sm">
                     Join Our Team
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- MAIN INTERACTIVE WORKSPACE VIEWPORTS -->
+    <!-- MAIN WORKSPACE VIEWPORTS -->
     <main class="flex-grow">
         
         <!-- VIEW 1: HOME PAGE CONTAINER -->
@@ -76,68 +107,70 @@
             <section class="relative bg-white pt-16 pb-24 overflow-hidden">
                 <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-6 space-y-6">
-                        <div class="inline-flex items-center space-x-2 bg-amber-50 text-gold px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
-                            <i class="fa-solid fa-star text-[10px]"></i>
-                            <span>Founded in 2007 • Abu Dhabi</span>
+                        <div class="inline-flex items-center space-x-2 bg-purple-50 text-eac-purple px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase border border-purple-100">
+                            <i class="fa-solid fa-award text-[10px]"></i>
+                            <span>Established in 2007 • Abu Dhabi Capital</span>
                         </div>
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1]">
-                            Empowering Talents, <br>
-                            <span class="text-transparent bg-clip-text gold-gradient">Fostering Independence.</span>
+                            Unlocking Talent, <br>
+                            <span class="text-transparent bg-clip-text text-splash-gradient">Acquiring Independence.</span>
                         </h1>
-                        <p class="text-slate-600 text-lg leading-relaxed max-w-xl">
-                            Welcome to the Emirates Autism Center. We provide world-class educational and rehabilitative care, building a respectful, knowledge-based environment to successfully integrate People of Determination into schools and society.
+                        <p class="text-slate-600 text-base leading-relaxed max-w-xl">
+                            EAC provides specialized educational modifications, sensory interventions, and behavioral care throughout the year. We are dedicated to providing a distinguished, knowledge-based, and respectful environment that fully includes People of Determination into society.
                         </p>
                         <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 pt-4">
-                            <button onclick="navigateTo('portal')" class="navy-deep text-white text-center px-8 py-3.5 rounded-xl font-medium hover:opacity-90 transition shadow-lg shadow-slate-900/10">
+                            <button onclick="navigateTo('portal')" class="bg-eac-purple hover:bg-[#39098A] text-white text-center px-8 py-3.5 rounded-xl font-medium transition shadow-lg shadow-purple-900/10">
                                 Explore Smart Portal
                             </button>
                             <button onclick="openChat()" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center px-6 py-3.5 rounded-xl font-medium transition flex items-center justify-center space-x-2">
-                                <i class="fa-solid fa-circle-info"></i>
+                                <i class="fa-solid fa-circle-info text-eac-purple"></i>
                                 <span>Request Info Pack</span>
                             </button>
                         </div>
                     </div>
                     
-                    <!-- Elegant Media Visual Element -->
+                    <!-- Factual Sidebar Matching Brand Concept -->
                     <div class="lg:col-span-6 relative">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-amber-100 to-transparent rounded-3xl transform rotate-3 scale-105 -z-10 opacity-60"></div>
-                        <div class="bg-slate-900 rounded-3xl h-[450px] shadow-xl overflow-hidden relative border border-slate-800 flex flex-col justify-between p-8 text-white">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-purple-100 to-transparent rounded-3xl transform rotate-3 scale-105 -z-10 opacity-60"></div>
+                        <div class="bg-eac-dark rounded-3xl min-h-[420px] shadow-xl overflow-hidden relative border border-slate-800 flex flex-col justify-between p-8 text-white">
                             <div class="flex justify-between items-start">
-                                <span class="bg-white/10 backdrop-blur-md text-gold text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10">100% Inclusion Success Framework</span>
-                                <div class="w-10 h-10 rounded-full bg-amber-500/10 flex items-center justify-center text-gold border border-amber-500/20"><i class="fa-solid fa-heart"></i></div>
+                                <span class="bg-white/10 backdrop-blur-md text-purple-300 text-xs font-semibold px-3 py-1.5 rounded-lg border border-white/10">100% Social Inclusion Target</span>
+                                <div class="w-10 h-10 rounded-full bg-purple-500/10 fill-current flex items-center justify-center text-purple-400 border border-purple-500/20"><i class="fa-solid fa-heart"></i></div>
                             </div>
-                            <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 space-y-2">
-                                <p class="text-xs font-semibold tracking-wider text-gold uppercase">Legacy of Excellence</p>
-                                <h3 class="text-xl font-bold text-white">First Formal Inclusion in UAE Schools</h3>
-                                <p class="text-sm text-slate-300">Founded on a dedicated journey to unlock the authentic potential of every student through rigorous custom behavioral methodologies.</p>
+                            <div class="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 space-y-3 mt-8">
+                                <p class="text-xs font-semibold tracking-wider text-purple-400 uppercase">The Journey of One Mother</p>
+                                <h3 class="text-xl font-bold text-white leading-snug">Founder Dr. Amal Jalal Sabry</h3>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Founded in 2007 out of a mother's journey with her son, Amr Sharaan—who became the 1st autistic individual in the UAE to receive formal high school inclusion and complete full-time employment.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- CORE STRATEGIC COLUMNS -->
+            <!-- METHODOLOGIES -->
             <section class="py-20 bg-slate-100/50 border-t border-slate-200/60">
                 <div class="max-w-7xl mx-auto px-6">
                     <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                        <h2 class="text-3xl font-bold tracking-tight text-slate-900">Strategic Objectives & Frameworks</h2>
-                        <p class="text-slate-600">Leading the way in empowering individuals with autism to achieve a dignified, self-reliant life within the capital community.</p>
+                        <h2 class="text-3xl font-bold tracking-tight text-slate-900">Evidence-Based Methodologies</h2>
+                        <p class="text-slate-600">Operating classrooms specifically engineered to meet structural, sensory, and environmental framework standards.</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-4">
-                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-gold flex items-center justify-center text-xl"><i class="fa-solid fa-graduation-cap"></i></div>
-                            <h3 class="text-lg font-semibold text-slate-900">Distinguished Care</h3>
-                            <p class="text-sm text-slate-600 leading-relaxed">Providing highly focused educational adjustments and behavioral therapies tailored to student requirements (ages 4 to 18).</p>
+                            <div class="w-12 h-12 rounded-xl bg-purple-50 text-eac-purple flex items-center justify-center text-xl"><i class="fa-solid fa-brain"></i></div>
+                            <h3 class="text-lg font-semibold text-slate-900">Structured Classrooms</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Integrating internationally certified intervention parameters including <strong>TEACCH</strong>, <strong>LOVAAS (ABA)</strong>, and <strong>P.E.C.S</strong> communication workflows for ages 4 to 18.</p>
                         </div>
                         <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-4">
-                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-gold flex items-center justify-center text-xl"><i class="fa-solid fa-users"></i></div>
-                            <h3 class="text-lg font-semibold text-slate-900">Family Consulting</h3>
-                            <p class="text-sm text-slate-600 leading-relaxed">Equipping parents and caregivers with actionable baseline strategies to sustain individual growth paths seamlessly at home.</p>
+                            <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-xl"><i class="fa-solid fa-palette"></i></div>
+                            <h3 class="text-lg font-semibold text-slate-900">Vocational Rehabilitation</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Unlocking student independence. Featuring handmade art pieces made from recycled materials, which won second place on a regional scale.</p>
                         </div>
                         <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 space-y-4">
-                            <div class="w-12 h-12 rounded-xl bg-amber-50 text-gold flex items-center justify-center text-xl"><i class="fa-solid fa-earth-americas"></i></div>
-                            <h3 class="text-lg font-semibold text-slate-900">Global Inclusion</h3>
-                            <p class="text-sm text-slate-600 leading-relaxed">Proudly serving a diverse international community representing more than 10 nationalities inside Abu Dhabi.</p>
+                            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl"><i class="fa-solid fa-shield-cat"></i></div>
+                            <h3 class="text-lg font-semibold text-slate-900">Neurodiversity Advocacy</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Pioneering shift from standard puzzle iconography to global neurodiversity brain spectrum templates, validating community voices and listening to student needs.</p>
                         </div>
                     </div>
                 </div>
@@ -147,8 +180,8 @@
         <!-- VIEW 2: INTEGRATED PORTAL PAGE CONTAINER -->
         <div id="view-portal" class="page-view hidden py-20 bg-white animate-fadeIn">
             <div class="max-w-4xl mx-auto px-6">
-                <div class="bg-slate-900 text-white rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12">
-                    <div class="md:col-span-5 gold-gradient p-8 text-white flex flex-col justify-between space-y-8">
+                <div class="bg-eac-dark text-white rounded-3xl shadow-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12">
+                    <div class="md:col-span-5 bg-eac-purple p-8 text-white flex flex-col justify-between space-y-8">
                         <div class="space-y-3">
                             <div class="w-10 h-10 rounded-lg bg-white/20 backdrop-blur-md flex items-center justify-center text-lg"><i class="fa-solid fa-shield-halved"></i></div>
                             <h3 class="text-2xl font-bold tracking-tight">EAC Smart Portal</h3>
@@ -158,30 +191,30 @@
                             <i class="fa-solid fa-circle-check mr-1"></i> End-to-end encrypted connection
                         </div>
                     </div>
-                    <div class="md:col-span-7 p-8 sm:p-10 bg-slate-900">
+                    <div class="md:col-span-7 p-8 sm:p-10 bg-eac-dark">
                         <div class="space-y-6">
                             <div>
                                 <h4 class="text-xl font-semibold">Sign in to your account</h4>
                                 <p class="text-slate-400 text-xs mt-1">Select your designated interface privilege tier below</p>
                             </div>
                             <div class="grid grid-cols-3 gap-2 p-1 bg-slate-800 rounded-lg text-xs font-medium text-center">
-                                <button id="role-parent" onclick="switchRole('parent')" class="bg-amber-500 text-slate-900 px-2 py-2 rounded-md font-semibold transition">Parent</button>
+                                <button id="role-parent" onclick="switchRole('parent')" class="bg-purple-600 text-white px-2 py-2 rounded-md font-semibold transition">Parent</button>
                                 <button id="role-therapist" onclick="switchRole('therapist')" class="text-slate-300 hover:text-white px-2 py-2 transition">Therapist</button>
                                 <button id="role-admin" onclick="switchRole('admin')" class="text-slate-300 hover:text-white px-2 py-2 transition">Admin Staff</button>
                             </div>
                             <div class="space-y-4">
                                 <div>
                                     <label class="block text-xs font-medium text-slate-400 mb-1">Registered Username / Email ID</label>
-                                    <input type="email" placeholder="user@emiratesautism.ae" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+                                    <input type="email" id="portal-email" placeholder="user@emiratesautism.ae" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-purple-500 transition">
                                 </div>
                                 <div>
                                     <div class="flex justify-between items-center mb-1">
                                         <label class="block text-xs font-medium text-slate-400">Security Password</label>
-                                        <a href="#" class="text-[11px] text-gold hover:underline">Reset Passkey?</a>
+                                        <a href="#" class="text-[11px] text-purple-400 hover:underline">Reset Passkey?</a>
                                     </div>
-                                    <input type="password" placeholder="••••••••" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500 transition">
+                                    <input type="password" id="portal-pass" placeholder="••••••••" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-purple-500 transition">
                                 </div>
-                                <button onclick="alert('Demo Authenticated: In production, this instantly links to Airtable/Salesforce synchronized student records.')" class="w-full gold-gradient text-slate-950 font-bold text-sm py-3 rounded-lg shadow-lg shadow-amber-500/10 hover:opacity-95 transition mt-2">
+                                <button onclick="triggerPortalLogin()" class="w-full bg-eac-purple text-white font-bold text-sm py-3 rounded-lg shadow-lg shadow-purple-500/10 hover:opacity-95 transition mt-2">
                                     Access Secure Database
                                 </button>
                             </div>
@@ -196,22 +229,22 @@
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
                     <div class="space-y-3">
-                        <span class="text-xs font-bold uppercase tracking-widest text-gold">Join the Center Legacy</span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Join the Center Legacy</span>
                         <h2 class="text-3xl font-bold tracking-tight text-slate-900">Career Opportunities</h2>
                         <p class="text-slate-600 max-w-xl text-sm">We are consistently searching for certified therapeutic leaders, dedicated speech advisors, and behavior tracking specialists to advance our capital footprint.</p>
                     </div>
                     <div class="mt-4 md:mt-0">
-                        <span class="text-xs font-medium text-slate-500 bg-white px-4 py-2 rounded-full border border-slate-200"><i class="fa-solid fa-briefcase text-gold mr-1"></i> 3 Positions Live Currently</span>
+                        <span class="text-xs font-medium text-slate-500 bg-white px-4 py-2 rounded-full border border-slate-200"><i class="fa-solid fa-briefcase text-purple-600 mr-1"></i> 3 Positions Live Currently</span>
                     </div>
                 </div>
 
                 <div class="space-y-4">
                     <!-- Job Card 1 -->
-                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-amber-500/40 transition shadow-sm">
+                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-purple-500/40 transition shadow-sm">
                         <div class="space-y-2">
                             <div class="flex items-center space-x-2">
                                 <h3 class="text-lg font-bold text-slate-900">Senior Behavior Analyst (BCBA)</h3>
-                                <span class="bg-amber-50 text-gold text-[10px] font-bold px-2 py-0.5 rounded uppercase">Full-Time</span>
+                                <span class="bg-purple-50 text-eac-purple text-[10px] font-bold px-2 py-0.5 rounded uppercase">Full-Time</span>
                             </div>
                             <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 font-medium">
                                 <span><i class="fa-solid fa-location-dot mr-1"></i> Abu Dhabi Main Branch</span>
@@ -225,11 +258,11 @@
                     </div>
 
                     <!-- Job Card 2 -->
-                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-amber-500/40 transition shadow-sm">
+                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-purple-500/40 transition shadow-sm">
                         <div class="space-y-2">
                             <div class="flex items-center space-x-2">
                                 <h3 class="text-lg font-bold text-slate-900">Special Education Teacher</h3>
-                                <span class="bg-amber-50 text-gold text-[10px] font-bold px-2 py-0.5 rounded uppercase">Full-Time</span>
+                                <span class="bg-purple-50 text-eac-purple text-[10px] font-bold px-2 py-0.5 rounded uppercase">Full-Time</span>
                             </div>
                             <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500 font-medium">
                                 <span><i class="fa-solid fa-location-dot mr-1"></i> Abu Dhabi Main Branch</span>
@@ -243,7 +276,7 @@
                     </div>
 
                     <!-- Job Card 3 -->
-                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-amber-500/40 transition shadow-sm">
+                    <div class="bg-white border border-slate-200/80 rounded-2xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 hover:border-purple-500/40 transition shadow-sm">
                         <div class="space-y-2">
                             <div class="flex items-center space-x-2">
                                 <h3 class="text-lg font-bold text-slate-900">Speech & Language Therapist</h3>
@@ -265,37 +298,37 @@
 
     </main>
 
-    <!-- PREMIUM SMART FOOTER -->
-    <footer class="navy-deep text-slate-400 py-12 px-6 border-t border-slate-800 mt-auto">
+    <!-- PREMIUM FOOTER -->
+    <footer class="bg-eac-dark text-slate-400 py-12 px-6 border-t border-slate-800 mt-auto">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
             <div class="space-y-4">
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 rounded-lg gold-gradient flex items-center justify-center text-white text-sm"><i class="fa-solid fa-hands-holding-child"></i></div>
+                    <div class="w-8 h-8 rounded-full bg-eac-purple flex items-center justify-center text-white text-sm font-bold">E</div>
                     <span class="font-bold text-white tracking-wider text-base">EMIRATES AUTISM</span>
                 </div>
-                <p class="text-xs text-slate-400 leading-relaxed">Dedicated to exceptional individual growth across behavioral, interactive, and psychological metrics since establishment in 2007.</p>
+                <p class="text-xs text-slate-400 leading-relaxed">Empowering People of Determination inside the capital with autism spectrum conditions through structured knowledge environments since 2007.</p>
             </div>
             <div>
                 <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Quick Navigation</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><button onclick="navigateTo('home')" class="hover:text-white transition">Main Home Profile</button></li>
-                    <li><button onclick="navigateTo('portal')" class="hover:text-white transition">Parent Portal Gate</button></li>
-                    <li><button onclick="navigateTo('careers')" class="hover:text-white transition">Active Careers Board</button></li>
+                    <li><button onclick="navigateTo('home')" class="hover:text-white transition text-left">Main Home View</button></li>
+                    <li><button onclick="navigateTo('portal')" class="hover:text-white transition text-left">Parent Portal Gateway</button></li>
+                    <li><button onclick="navigateTo('careers')" class="hover:text-white transition text-left">Careers Board Hub</button></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Compliance Framework</h4>
-                <p class="text-xs text-slate-400 leading-relaxed mb-2">Completely integrated within Abu Dhabi local developmental policies.</p>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Strategic Objectives</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mb-2">Providing parent coaching, psychological care patterns, and building strong educational inclusion infrastructure.</p>
                 <span class="inline-block bg-slate-800 text-slate-300 text-[10px] px-2 py-1 rounded border border-slate-700">ADEK & DOH Aligned</span>
             </div>
             <div>
-                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Contact & Location</h4>
-                <p class="text-xs text-slate-400">Al Karamah District, Abu Dhabi, UAE</p>
+                <h4 class="text-white font-semibold mb-3 text-xs uppercase tracking-wider">Contact & Inquiries</h4>
+                <p class="text-xs text-slate-400">Al Karamah Street, Abu Dhabi, UAE</p>
                 <p class="text-xs text-white font-semibold mt-2">info@emiratesautism.ae</p>
             </div>
         </div>
         <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <span>© 2026 Emirates Autism Center. Built as a Premium Concept Proposal.</span>
+            <span>© 2026 Emirates Autism Center. Redesigned Premium Concept.</span>
             <div class="space-x-4">
                 <a href="#" class="hover:text-slate-300 transition">Privacy Directives</a>
                 <a href="#" class="hover:text-slate-300 transition">Terms of Use</a>
@@ -305,87 +338,91 @@
 
     <!-- AI CHATBOX COMPONENT ("namcodex") -->
     <div id="ai-chatbox-container" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-        <button id="chat-toggle-btn" onclick="toggleChat()" class="gold-gradient text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition duration-300 relative group">
+        <button id="chat-toggle-btn" onclick="toggleChat()" class="bg-eac-purple hover:bg-[#39098A] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-105 transition duration-300 relative group">
             <i id="chat-icon" class="fa-solid fa-comments text-xl"></i>
             <span class="absolute right-16 bg-slate-900 text-white text-xs font-medium px-3 py-1.5 rounded-xl shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">Chat with namcodex AI</span>
         </button>
 
         <div id="chat-window" class="hidden w-96 max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden mt-3 transition duration-300 origin-bottom-right">
-            <div class="navy-deep p-4 text-white flex justify-between items-center">
+            <div class="bg-eac-dark p-4 text-white flex justify-between items-center">
                 <div class="flex items-center space-x-3">
-                    <div class="w-9 h-9 rounded-lg gold-gradient flex items-center justify-center text-sm font-bold text-white relative">
+                    <div class="w-9 h-9 rounded-lg bg-eac-purple fill-current flex items-center justify-center text-sm font-bold text-white relative">
                         <i class="fa-solid fa-robot"></i>
                         <span class="absolute bottom-0 right-0 w-2 h-2 bg-emerald-500 rounded-full border border-white"></span>
                     </div>
                     <div>
                         <h4 class="font-semibold text-sm leading-tight">namcodex AI Assistant</h4>
-                        <span class="text-[11px] text-slate-400">EAC Support Module • Online</span>
+                        <span class="text-[11px] text-slate-400">EAC Pipeline Guide • Online</span>
                     </div>
                 </div>
                 <button onclick="toggleChat()" class="text-slate-400 hover:text-white p-1 rounded transition"><i class="fa-solid fa-xmark"></i></button>
             </div>
 
-            <!-- Dialogue Arena -->
+            <!-- Chat Message Arena -->
             <div id="chat-messages" class="p-4 flex-1 h-80 overflow-y-auto space-y-3 bg-slate-50 text-xs">
                 <div class="flex items-start space-x-2.5 max-w-[85%]">
                     <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200 text-slate-700 shadow-sm leading-relaxed">
-                        Hello! Welcome to the <strong>Emirates Autism Center</strong> smart platform concept. I am here to help route information directly to admission registries and HR sync pipelines. What details can I help you extract?
+                        Hello! Welcome to the premium concept space for the <strong>Emirates Autism Center</strong>. I can route operational requests straight to database automation systems. How can I assist your team today?
                     </div>
                 </div>
             </div>
 
-            <!-- Lead Capture Box Input -->
+            <!-- Input Box -->
             <div class="p-3 bg-white border-t border-slate-100 flex items-center space-x-2">
-                <input id="chat-input-field" type="text" placeholder="Inquire about programs, admission or slots..." onkeypress="handleChatKey(event)" class="flex-1 bg-slate-100 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-amber-500 transition">
-                <button onclick="sendChatMessage()" class="gold-gradient text-white w-8 h-8 rounded-xl flex items-center justify-center hover:opacity-90 transition shadow-sm"><i class="fa-solid fa-paper-plane text-xs"></i></button>
+                <input id="chat-input-field" type="text" placeholder="Inquire about programs, admission or slots..." onkeypress="handleChatKey(event)" class="flex-1 bg-slate-100 border border-slate-200 rounded-xl px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-purple-500 transition">
+                <button onclick="sendChatMessage()" class="bg-eac-purple text-white w-8 h-8 rounded-xl flex items-center justify-center hover:opacity-90 transition shadow-sm"><i class="fa-solid fa-paper-plane text-xs"></i></button>
             </div>
         </div>
     </div>
 
-    <!-- CAREER INTERACTIVE MODAL -->
+    <!-- CAREER INTERACTIVE APPLICATION MODAL -->
     <div id="apply-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl shadow-xl border border-slate-200 max-w-md w-full overflow-hidden">
             <div class="p-6 border-b border-slate-100 flex justify-between items-center">
                 <div>
                     <h3 class="font-bold text-lg text-slate-900">EAC Candidate Application</h3>
-                    <p id="modal-job-title" class="text-xs text-gold font-medium mt-0.5">Job Title Placeholder</p>
+                    <p id="modal-job-title" class="text-xs text-eac-purple font-medium mt-0.5">Title Placeholder</p>
                 </div>
                 <button onclick="closeApplyModal()" class="text-slate-400 hover:text-slate-600 transition"><i class="fa-solid fa-xmark"></i></button>
             </div>
             <div class="p-6 space-y-4 text-xs">
                 <div>
                     <label class="block font-medium text-slate-700 mb-1">Full Legal Name</label>
-                    <input type="text" id="cand-name" placeholder="Candidate Name" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 focus:outline-none focus:border-amber-500">
+                    <input type="text" id="cand-name" placeholder="Candidate Name" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 focus:outline-none focus:border-purple-500">
                 </div>
                 <div>
                     <label class="block font-medium text-slate-700 mb-1">Email Address</label>
-                    <input type="email" id="cand-email" placeholder="name@domain.com" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 focus:outline-none focus:border-amber-500">
+                    <input type="email" id="cand-email" placeholder="name@domain.com" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-slate-800 focus:outline-none focus:border-purple-500">
                 </div>
                 <div>
-                    <label class="block font-medium text-slate-700 mb-1">Resume Document (PDF Format Preferred)</label>
+                    <label class="block font-medium text-slate-700 mb-1">Resume Document (PDF Format)</label>
                     <input type="file" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-2 py-1.5 text-slate-600 focus:outline-none">
                 </div>
-                <button onclick="submitApplicationMock()" class="w-full gold-gradient text-slate-950 font-bold py-2.5 rounded-lg shadow transition mt-2">Submit Candidate Application</button>
+                <button onclick="submitApplicationMock()" class="w-full bg-eac-purple text-white font-bold py-2.5 rounded-lg shadow transition mt-2">Submit Candidate Application</button>
             </div>
         </div>
     </div>
 
     <!-- SCRIPT APPLICATION CONTROLLER -->
     <script>
-        // High-End Multi-Tab Navigation Management
+        // Tab Navigation Management
         function navigateTo(viewId) {
-            // Hide all active page container views
-            document.querySelectorAll('.page-view').forEach(view => view.classList.add('hidden'));
+            document.querySelectorAll('.page-view').forEach(view => {
+                view.classList.add('hidden');
+            });
             
-            // Show requested view
-            document.getElementById('view-' + viewId).classList.remove('hidden');
+            const targetView = document.getElementById('view-' + viewId);
+            if (targetView) {
+                targetView.classList.remove('hidden');
+            }
             
-            // Handle Navigation Menu Font Weight Styling
             document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('font-semibold', 'text-slate-900');
+                link.classList.remove('font-semibold', 'text-eac-purple');
             });
             const activeNav = document.getElementById('nav-' + viewId);
-            if(activeNav) activeNav.classList.add('font-semibold', 'text-slate-900');
+            if(activeNav) {
+                activeNav.classList.add('font-semibold', 'text-eac-purple');
+            }
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
@@ -399,13 +436,28 @@
             };
             
             Object.keys(buttons).forEach(key => {
-                buttons[key].className = "text-slate-300 hover:text-white px-2 py-2 transition";
+                if (buttons[key]) {
+                    buttons[key].className = "text-slate-300 hover:text-white px-2 py-2 transition";
+                }
             });
 
-            buttons[role].className = "bg-amber-500 text-slate-900 px-2 py-2 rounded-md font-semibold transition";
+            if (buttons[role]) {
+                buttons[role].className = "bg-purple-600 text-white px-2 py-2 rounded-md font-semibold transition";
+            }
         }
 
-        // Live Chat window handlers
+        // Portal Mock Validation
+        function triggerPortalLogin() {
+            const email = document.getElementById('portal-email').value;
+            const pass = document.getElementById('portal-pass').value;
+            if(!email || !pass) {
+                alert('Please supply complete mock authentication parameters.');
+                return;
+            }
+            alert(`Demo Portal Login Success: Safe, automated sync path verified.`);
+        }
+
+        // Live Chat window toggles
         function toggleChat() {
             const win = document.getElementById('chat-window');
             const icon = document.getElementById('chat-icon');
@@ -436,7 +488,7 @@
 
             const userMsg = document.createElement('div');
             userMsg.className = "flex items-start space-x-2.5 max-w-[85%] ml-auto justify-end";
-            userMsg.innerHTML = `<div class="gold-gradient text-slate-950 p-3 rounded-2xl rounded-tr-none shadow-sm font-medium leading-relaxed">${txt}</div>`;
+            userMsg.innerHTML = `<div class="bg-eac-purple text-white p-3 rounded-2xl rounded-tl-none shadow-sm font-medium leading-relaxed">${txt}</div>`;
             area.appendChild(userMsg);
             
             input.value = '';
@@ -445,30 +497,30 @@
             setTimeout(() => {
                 const botMsg = document.createElement('div');
                 botMsg.className = "flex items-start space-x-2.5 max-w-[85%]";
-                botMsg.innerHTML = `<div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200 text-slate-700 shadow-sm leading-relaxed">Thank you for your prompt message. The custom lead routing system configured inside "<strong>namcodex</strong>" will pass your inquiry details onto the designated department.</div>`;
+                botMsg.innerHTML = `<div class="bg-white p-3 rounded-2xl rounded-tl-none border border-slate-200 text-slate-700 shadow-sm leading-relaxed">Thank you. Your request regarding "<em>${txt}</em>" is processed. The lead router setup inside <strong>namcodex</strong> will transmit details directly to WhatsApp/Email sync targets.</div>`;
                 area.appendChild(botMsg);
                 area.scrollTop = area.scrollHeight;
             }, 1000);
         }
 
-        // Careers Modals Operations
+        // Careers Modals System Handlers
         function openApplyModal(title) {
             document.getElementById('modal-job-title').innerText = title;
             document.getElementById('apply-modal').classList.remove('hidden');
         }
 
-         PelasecloseApplyModal() {
-            document.getElementById('apply-modal').classList.add('hidden');
-        }
-        
         function closeApplyModal() {
             document.getElementById('apply-modal').classList.add('hidden');
         }
 
         function submitApplicationMock() {
             const name = document.getElementById('cand-name').value;
-            if(!name) { alert('Please supply a placeholder name.'); return; }
-            alert(`Success! Application for ${name} successfully logged to the mock center database.`);
+            const email = document.getElementById('cand-email').value;
+            if(!name || !email) { 
+                alert('Please complete the applicant details.'); 
+                return; 
+            }
+            alert(`Success! Application for ${name} successfully logged into the system schema.`);
             closeApplyModal();
         }
     </script>
