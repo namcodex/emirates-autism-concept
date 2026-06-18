@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emirates Autism Center | Premium Identity Hub</title>
+    <title>Emirates Autism Center | Full Corporate Identity & Media Hub</title>
     <!-- Tailwind CSS for high-end styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for Premium Icons -->
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <!-- HIGH-END NAVIGATION BAR (Matches image_0b1668.png exactly) -->
+    <!-- HIGH-END NAVIGATION BAR -->
     <header class="sticky top-0 z-40 bg-white shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
             
@@ -71,16 +71,16 @@
             </div>
 
             <!-- Navigation Links -->
-            <nav class="hidden md:flex space-x-6 font-medium text-sm text-slate-600">
+            <nav class="hidden md:flex space-x-5 font-medium text-sm text-slate-600">
                 <button onclick="navigateTo('home')" id="nav-home" class="nav-link hover:text-slate-900 transition font-semibold text-eac-purple">Home</button>
                 <button onclick="navigateTo('enrollment')" id="nav-enrollment" class="nav-link hover:text-slate-900 transition">Admissions & Intake</button>
                 <button onclick="navigateTo('services')" id="nav-services" class="nav-link hover:text-slate-900 transition">Programs & Services</button>
                 <button onclick="navigateTo('gallery')" id="nav-gallery" class="nav-link hover:text-slate-900 transition">Student Gallery</button>
+                <button onclick="navigateTo('sponsorship')" id="nav-sponsorship" class="nav-link hover:text-slate-900 transition flex items-center space-x-1"><span>Sponsorship</span><span class="bg-amber-500 text-[9px] text-white px-1.5 py-0.2 rounded-full font-bold">CSR</span></button>
                 <button onclick="navigateTo('portal')" id="nav-portal" class="nav-link hover:text-slate-900 transition">Smart Portal</button>
                 <button onclick="navigateTo('careers')" id="nav-careers" class="nav-link hover:text-slate-900 transition">Careers</button>
             </nav>
 
-            <!-- Action Buttons -->
             <div class="flex items-center space-x-3">
                 <button onclick="navigateTo('enrollment')" class="bg-eac-purple hover:bg-[#39098A] text-white text-xs px-4 py-2.5 rounded-lg font-semibold transition shadow-sm">
                     Enroll a Child
@@ -92,7 +92,7 @@
     <!-- MAIN CONTENT VIEWPORTS -->
     <main class="flex-grow">
         
-        <!-- VIEW 1: HOME PAGE WITH BRAND IDENTITY & STATEMENT LABS -->
+        <!-- VIEW 1: HOME PAGE -->
         <div id="view-home" class="page-view space-y-0">
             <!-- HERO SECTION -->
             <section class="relative bg-white pt-16 pb-20 overflow-hidden border-b border-slate-100">
@@ -113,13 +113,12 @@
                             <button onclick="navigateTo('services')" class="bg-eac-purple hover:bg-[#39098A] text-white text-center px-8 py-3.5 rounded-xl font-medium transition shadow-lg shadow-purple-900/10">
                                 Explore Programs & Services
                             </button>
-                            <button onclick="navigateTo('enrollment')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center px-6 py-3.5 rounded-xl font-medium transition">
-                                Start Intake Process
+                            <button onclick="navigateTo('gallery')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-center px-6 py-3.5 rounded-xl font-medium transition">
+                                <i class="fa-brands fa-youtube text-red-600 mr-2"></i>Watch Media Gallery
                             </button>
                         </div>
                     </div>
                     
-                    <!-- Factual Sidebar -->
                     <div class="lg:col-span-6 relative">
                         <div class="absolute inset-0 bg-gradient-to-tr from-purple-100 to-transparent rounded-3xl transform rotate-3 scale-105 -z-10 opacity-60"></div>
                         <div class="bg-eac-dark rounded-3xl min-h-[400px] shadow-xl overflow-hidden relative border border-slate-800 flex flex-col justify-between p-8 text-white">
@@ -138,74 +137,191 @@
                     </div>
                 </div>
             </section>
+        </div>
 
-            <!-- CORE CORPORATE IDENTITY: MISSION, VISION, & GOALS -->
-            <section class="bg-slate-50 py-20 border-b border-slate-200/60">
-                <div class="max-w-7xl mx-auto px-6 space-y-16">
-                    <div class="text-center max-w-2xl mx-auto space-y-2">
-                        <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Corporate Manifesto</span>
-                        <h2 class="text-3xl font-bold text-slate-900">Our Identity & Creed</h2>
-                        <p class="text-slate-600 text-sm">Aligning individual behavior modifications with societal milestones across the GCC region.</p>
-                    </div>
-
-                    <!-- Vision & Mission Dual Grid Layout -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Vision Statement Module -->
-                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4 relative overflow-hidden group hover:border-purple-300 transition duration-300">
-                            <div class="w-12 h-12 bg-purple-50 text-eac-purple rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-eye"></i></div>
-                            <h3 class="text-xl font-bold text-slate-900">Our Vision</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed">
-                                To establish a world-class specialized private infrastructure where every autistic individual achieves self-reliance, gains uncompromised mutual respect, and experiences meaningful social absorption across public spaces, learning organizations, and commercial workspaces inside the UAE.
-                            </p>
-                        </div>
-                        <!-- Mission Statement Module -->
-                        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4 relative overflow-hidden group hover:border-purple-300 transition duration-300">
-                            <div class="w-12 h-12 bg-pink-50 text-pink-600 rounded-xl flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-bullseye"></i></div>
-                            <h3 class="text-xl font-bold text-slate-900">Our Mission</h3>
-                            <p class="text-slate-600 text-xs leading-relaxed">
-                                To deliver highly responsive psychological and educational strategies tailored specifically to distinct neurodivergent parameters. We are committed to fostering active parent-professional partnerships, reducing systemic friction, and facilitating transition workflows directly into formal academic modules.
-                            </p>
+        <!-- VIEW 2: PROGRAMS & SERVICES -->
+        <div id="view-services" class="page-view hidden py-16 bg-white animate-fadeIn">
+            <div class="max-w-7xl mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-eac-purple bg-purple-50 px-3 py-1 rounded-full border border-purple-100 inline-block">Official Frameworks</span>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900">Our Core Therapeutic Services</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="w-9 h-9 bg-purple-100 text-eac-purple rounded-lg flex items-center justify-center text-sm font-bold"><i class="fa-solid fa-stethoscope"></i></div>
+                            <h3 class="font-bold text-slate-900 text-sm">Scientific Assessment</h3>
+                            <p class="text-slate-600 text-[11px] leading-relaxed">Utilizing tools like ADOS-2 and PEP-R to tracking actual and potential capabilities.</p>
                         </div>
                     </div>
-
-                    <!-- Core Centers Strategic Goals Module -->
-                    <div class="bg-eac-dark text-white p-8 sm:p-12 rounded-3xl shadow-xl space-y-8 relative overflow-hidden">
-                        <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-purple-600/10 rounded-full blur-2xl"></div>
-                        <div class="max-w-xl space-y-2">
-                            <span class="text-[10px] bg-purple-500/20 text-purple-300 font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border border-purple-500/30">Strategic Directives</span>
-                            <h3 class="text-2xl font-bold">Our Main Organizational Goals</h3>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="w-9 h-9 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-sm font-bold"><i class="fa-solid fa-comments"></i></div>
+                            <h3 class="font-bold text-slate-900 text-sm">Speech Therapy</h3>
+                            <p class="text-slate-600 text-[11px] leading-relaxed">Delivering expressive and receptive verbal roadmaps via senior speech pathologists.</p>
                         </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
-                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
-                                <span class="text-purple-400 font-bold text-lg">01</span>
-                                <h4 class="font-bold text-white text-sm">Milestone Tuning</h4>
-                                <p class="text-slate-300 leading-relaxed">Systematically building behavioral, cognitive, and communicative competencies across developmental tiers.</p>
-                            </div>
-                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
-                                <span class="text-purple-400 font-bold text-lg">02</span>
-                                <h4 class="font-bold text-white text-sm">Parent Advocacy</h4>
-                                <p class="text-slate-300 leading-relaxed">Empowering family ecosystems with regular data logs, custom counseling frameworks, and home support blueprints.</p>
-                            </div>
-                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
-                                <span class="text-purple-400 font-bold text-lg">03</span>
-                                <h4 class="font-bold text-white text-sm">ADEK Integrity</h4>
-                                <p class="text-slate-300 leading-relaxed">Upholding private inclusive academic principles under the direct localized verification of regulatory standard protocols.</p>
-                            </div>
-                            <div class="space-y-2 p-4 bg-white/5 rounded-xl border border-white/10">
-                                <span class="text-purple-400 font-bold text-lg">04</span>
-                                <h4 class="font-bold text-white text-sm">Workplace Pathing</h4>
-                                <p class="text-slate-300 leading-relaxed">Pioneering sustainable real-world vocational pipelines so every student unlocks financial self-sovereignty.</p>
-                            </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="w-9 h-9 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center text-sm font-bold"><i class="fa-solid fa-hand-sparkles"></i></div>
+                            <h3 class="font-bold text-slate-900 text-sm">Occupational Therapy</h3>
+                            <p class="text-slate-600 text-[11px] leading-relaxed">Advanced sensory integration chamber implementations developed with EMAAL support.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <div class="w-9 h-9 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center text-sm font-bold"><i class="fa-solid fa-dumbbell"></i></div>
+                            <h3 class="font-bold text-slate-900 text-sm">Adaptive Physical Ed.</h3>
+                            <p class="text-slate-600 text-[11px] leading-relaxed">Fostering coordination and dynamic balance inside our specialized Tatweer Gym spaces.</p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
 
-        <!-- VIEW 2: ADMISSIONS & INTAKE HUB -->
+        <!-- VIEW 3: STUDENT GALLERY & LIVE VIDEO INTERACTIVE CATALOG (Reflecting Official YouTube Channel Output) -->
+        <div id="view-gallery" class="page-view hidden py-16 bg-white animate-fadeIn">
+            <div class="max-w-7xl mx-auto px-6 space-y-16">
+                
+                <!-- Title Matrix -->
+                <div class="text-center max-w-3xl mx-auto space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-red-600 bg-red-50 px-2.5 py-1 rounded-md border border-red-200 inline-flex items-center"><i class="fa-brands fa-youtube mr-1.5 text-sm"></i> Official EAC Video Broadcast Feed</span>
+                    <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Activities & Social Absorption Records</h2>
+                    <p class="text-slate-600 text-sm">Documenting live milestones across adaptive physical training, creative upcycling exhibitions, and public social integration field sessions in Abu Dhabi.</p>
+                </div>
+
+                <!-- Video Dynamic Display Interface Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Video Card 1 -->
+                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-44 bg-slate-900 flex items-center justify-center overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
+                                <div class="absolute inset-0 bg-purple-900/20 backdrop-blur-[1px] mix-blend-multiply"></div>
+                                <span class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded shadow z-20 uppercase">Community Inclusion</span>
+                                <!-- Simulated Player Canvas -->
+                                <div class="w-12 h-12 rounded-full bg-white/90 text-red-600 flex items-center justify-center text-lg shadow-lg group-hover:scale-110 transition z-20 cursor-pointer" onclick="alert('Launching secure streaming relay for: Student Sports & Swimming Framework Showcase.')">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <p class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Adaptive Physical Ed. • Swimming Sessions</p>
+                                <h4 class="font-bold text-slate-900 text-sm leading-snug">Student Sports & Swimming Framework Showcase</h4>
+                                <p class="text-slate-600 text-[11px] leading-relaxed">Documenting dynamic psycho-motor progression logs and water safety adaptation milestones guided by professional coaches at Al Jazira Sports Club.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex justify-between items-center text-[11px] text-slate-400 border-t border-slate-200/50 mt-2">
+                            <span><i class="fa-solid fa-clock mr-1"></i> 3 mins 42 secs</span>
+                            <a href="https://www.youtube.com/channel/UCf5-YhJxJXuk3AnerPXVxVA" target="_blank" class="text-eac-purple font-semibold hover:underline">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square text-[9px] ml-0.5"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 2 -->
+                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-44 bg-slate-900 flex items-center justify-center overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
+                                <div class="absolute inset-0 bg-pink-900/20 backdrop-blur-[1px] mix-blend-multiply"></div>
+                                <span class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded shadow z-20 uppercase">Vocational Exhibition</span>
+                                <div class="w-12 h-12 rounded-full bg-white/90 text-red-600 flex items-center justify-center text-lg shadow-lg group-hover:scale-110 transition z-20 cursor-pointer" onclick="alert('Launching secure streaming relay for: Art Workshops & Sustainable Upcycling Expos.')">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <p class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Art Therapy • Fine Motor Labs</p>
+                                <h4 class="font-bold text-slate-900 text-sm leading-snug">Art Workshops & Sustainable Upcycling Expos</h4>
+                                <p class="text-slate-600 text-[11px] leading-relaxed">A live look into our craft matrix labs as students transform materials into works of art, including the HH Sheikh Zayed Handmade Tribute piece.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex justify-between items-center text-[11px] text-slate-400 border-t border-slate-200/50 mt-2">
+                            <span><i class="fa-solid fa-clock mr-1"></i> 4 mins 15 secs</span>
+                            <a href="https://www.youtube.com/channel/UCf5-YhJxJXuk3AnerPXVxVA" target="_blank" class="text-eac-purple font-semibold hover:underline">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square text-[9px] ml-0.5"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Video Card 3 -->
+                    <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm group flex flex-col justify-between">
+                        <div>
+                            <div class="relative h-44 bg-slate-900 flex items-center justify-center overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
+                                <div class="absolute inset-0 bg-emerald-900/20 backdrop-blur-[1px] mix-blend-multiply"></div>
+                                <span class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded shadow z-20 uppercase">National Milestones</span>
+                                <div class="w-12 h-12 rounded-full bg-white/90 text-red-600 flex items-center justify-center text-lg shadow-lg group-hover:scale-110 transition z-20 cursor-pointer" onclick="alert('Launching secure streaming relay for: UAE National Day Ceremonies & Gatherings.')">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="p-5 space-y-2">
+                                <p class="text-[10px] text-slate-400 font-semibold uppercase tracking-wider">Cultural Events • Social Integration</p>
+                                <h4 class="font-bold text-slate-900 text-sm leading-snug">UAE National Day Ceremonies & Gatherings</h4>
+                                <p class="text-slate-600 text-[11px] leading-relaxed">Highlighting full social absorption and student presentations during traditional heritage celebrations and regional partner gatherings.</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0 flex justify-between items-center text-[11px] text-slate-400 border-t border-slate-200/50 mt-2">
+                            <span><i class="fa-solid fa-clock mr-1"></i> 5 mins 10 secs</span>
+                            <a href="https://www.youtube.com/channel/UCf5-YhJxJXuk3AnerPXVxVA" target="_blank" class="text-eac-purple font-semibold hover:underline">Watch on YouTube <i class="fa-solid fa-arrow-up-right-from-square text-[9px] ml-0.5"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Channel Direct Action Banner -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between border border-slate-800 shadow-lg text-xs">
+                    <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                        <div class="w-10 h-10 rounded-full bg-red-600 flex items-center justify-center text-base text-white shadow"><i class="fa-brands fa-youtube"></i></div>
+                        <div>
+                            <h4 class="font-bold text-sm text-white">Subscribe to the Official YouTube Workspace Channel</h4>
+                            <p class="text-slate-400 leading-relaxed">Access real-time coverage of community events and educational seminars updated live across terms.</p>
+                        </div>
+                    </div>
+                    <a href="https://www.youtube.com/channel/UCf5-YhJxJXuk3AnerPXVxVA" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2.5 rounded-lg shadow-md transition flex items-center space-x-1.5">
+                        <span>Visit Channel Hub</span><i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- VIEW 4: SPONSORSHIP HUB -->
+        <div id="view-sponsorship" class="page-view hidden py-16 bg-slate-50 animate-fadeIn">
+            <div class="max-w-6xl mx-auto px-6 space-y-12">
+                <div class="text-center max-w-2xl mx-auto space-y-2">
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200 inline-block">Corporate Social Responsibility (CSR)</span>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900">Partner & Sponsor Frameworks</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">Therapeutic Equipment</span>
+                            <h3 class="text-lg font-bold text-slate-900">Lab Material Patron</h3>
+                            <p class="text-slate-600 text-xs">Sponsor active vocational materials within our specialized craft matrix labs.</p>
+                        </div>
+                        <button onclick="openSponsorshipIntent('Lab Material Patron')" class="w-full bg-slate-900 text-white text-xs font-semibold py-2.5 rounded-xl">Request Briefing Dossier</button>
+                    </div>
+                    <div class="bg-white border-2 border-purple-500 rounded-2xl p-6 shadow-sm flex flex-col justify-between space-y-4 relative">
+                        <span class="absolute -top-3 left-6 bg-purple-600 text-white text-[9px] font-bold px-2 py-0.5 rounded-full">HIGH IMPACT</span>
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold text-eac-purple bg-purple-50 px-2 py-0.5 rounded">IEP Support</span>
+                            <h3 class="text-lg font-bold text-slate-900">Student Endowment Seat</h3>
+                            <p class="text-slate-600 text-xs">Secures comprehensive diagnostic assessment and speech therapy access.</p>
+                        </div>
+                        <button onclick="openSponsorshipIntent('Student Endowment Seat')" class="w-full bg-eac-purple text-white text-xs font-semibold py-2.5 rounded-xl">Request Briefing Dossier</button>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">Sensory Expansion</span>
+                            <h3 class="text-lg font-bold text-slate-900">Sensory Integration Sponsor</h3>
+                            <p class="text-slate-600 text-xs">Help fund structural facility developments matching international criteria.</p>
+                        </div>
+                        <button onclick="openSponsorshipIntent('Sensory Integration Sponsor')" class="w-full bg-slate-900 text-white text-xs font-semibold py-2.5 rounded-xl">Request Briefing Dossier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIEW 5: ADMISSIONS & INTAKE HUB -->
         <div id="view-enrollment" class="page-view hidden py-16 bg-slate-50 animate-fadeIn">
-            <!-- Form & Wizard Modules -->
-            <div class="max-w-5xl mx-auto px-6 space-y-12">
+            <div class="max-w-5xl mx-auto px-6 space-y-6">
                 <div class="text-center max-w-2xl mx-auto space-y-2">
                     <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Join Our Center</span>
                     <h2 class="text-3xl font-bold text-slate-900">Student Intake & Registration</h2>
@@ -216,72 +332,26 @@
             </div>
         </div>
 
-        <!-- VIEW 3: PROGRAMS & SERVICES -->
-        <div id="view-services" class="page-view hidden py-16 bg-white animate-fadeIn">
-            <div class="max-w-7xl mx-auto px-6 space-y-12">
-                <div class="text-center max-w-2xl mx-auto space-y-2">
-                    <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Comprehensive Interventions</span>
-                    <h2 class="text-3xl font-bold text-slate-900">EAC Frameworks & Services</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-2">
-                        <h3 class="font-bold text-slate-900 text-sm">Psycho-Education Curriculum</h3>
-                        <p class="text-slate-600 text-xs">Continuous assessments at active social, psychological, and behavioral adjustment levels.</p>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-2">
-                        <h3 class="font-bold text-slate-900 text-sm">100% Social Inclusion Programs</h3>
-                        <p class="text-slate-600 text-xs">Actively involving all students inside local community recreation and public field trips.</p>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/60 space-y-2">
-                        <h3 class="font-bold text-slate-900 text-sm">Vocational Rehabilitation</h3>
-                        <p class="text-slate-600 text-xs">Therapeutic fine-motor craft labs focusing on reusing wood waste and sustainable materials.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIEW 4: STUDENT GALLERY -->
-        <div id="view-gallery" class="page-view hidden py-16 bg-white animate-fadeIn">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
-                    <span class="text-xs font-bold uppercase tracking-widest text-eac-purple">Vocational & Art Exhibition</span>
-                    <h2 class="text-3xl font-bold text-slate-900">Student Creative Catalog</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
-                        <div class="h-48 bg-gradient-to-tr from-purple-600 to-pink-500 rounded-xl"></div>
-                        <h4 class="font-bold text-slate-900 text-sm mt-2">HH Sheikh Zayed Handmade Tribute</h4>
-                        <p class="text-slate-600 text-xs">Innovative wood waste composition created by the vocational collective.</p>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
-                        <div class="h-48 bg-gradient-to-tr from-indigo-900 to-purple-600 rounded-xl"></div>
-                        <h4 class="font-bold text-slate-900 text-sm mt-2">Neurodiversity Dynamic Tree</h4>
-                        <p class="text-slate-600 text-xs">Crafted collaboratively during special classroom fine-motor sessions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- VIEW 5: SMART PORTAL -->
+        <!-- VIEW 6: SMART PORTAL -->
         <div id="view-portal" class="page-view hidden py-20 bg-slate-50 animate-fadeIn">
             <div class="max-w-md mx-auto bg-white p-8 rounded-2xl border border-slate-200 space-y-4">
                 <h3 class="font-bold text-slate-900 text-sm">Access Smart Database</h3>
-                <input type="email" placeholder="Email" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs">
-                <input type="password" placeholder="Password" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs">
-                <button onclick="alert('Authenticated secure logs.')" class="w-full bg-eac-purple text-white text-xs font-bold py-2.5 rounded-lg shadow-md">Login</button>
+                <input type="email" placeholder="Corporate User Account Email" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs">
+                <input type="password" placeholder="Database Access Code" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-xs">
+                <button onclick="alert('Authenticated secure parent portal logs.')" class="w-full bg-eac-purple text-white text-xs font-bold py-2.5 rounded-lg shadow-md">Secure Login</button>
             </div>
         </div>
 
-        <!-- VIEW 6: CAREERS -->
+        <!-- VIEW 7: CAREERS -->
         <div id="view-careers" class="page-view hidden py-16 bg-slate-50 animate-fadeIn">
             <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl border border-slate-200 space-y-4">
                 <h3 class="font-bold text-slate-900 text-base">Open Opportunities</h3>
                 <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 flex justify-between items-center text-xs">
                     <div>
                         <p class="font-bold text-slate-900">Senior Behavior Analyst (BCBA)</p>
-                        <p class="text-slate-500">Abu Dhabi • Full Time</p>
+                        <p class="text-slate-500">Abu Dhabi Campus • Full Time</p>
                     </div>
-                    <button onclick="alert('Submit cv to careers@emiratesautism.ae')" class="bg-eac-purple text-white px-3 py-1.5 rounded-md font-semibold">Apply</button>
+                    <button onclick="alert('Please transmit your credentials to careers@emiratesautism.ae')" class="bg-eac-purple text-white px-3 py-1.5 rounded-md font-semibold">Apply Now</button>
                 </div>
             </div>
         </div>
@@ -290,8 +360,30 @@
 
     <!-- FOOTER -->
     <footer class="bg-eac-dark text-slate-400 py-8 px-6 text-center text-xs border-t border-slate-800">
-        <span>© 2026 Emirates Autism Center. Fully Verified Corporate Infrastructure.</span>
+        <span>© 2026 Emirates Autism Center. Fully Audited Public Media Records.</span>
     </footer>
+
+    <!-- INTERACTIVE CORPORATE INQUIRY MODAL -->
+    <div id="sponsor-modal" class="hidden fixed inset-0 bg-slate-900/80 backdrop-blur-md z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border border-slate-100">
+            <div class="p-5 border-b border-slate-100 flex justify-between items-center bg-slate-50">
+                <h3 class="font-bold text-sm text-slate-900">CSR Partnership Initiation</h3>
+                <button onclick="closeSponsorshipModal()" class="text-slate-400 hover:text-slate-600 transition"><i class="fa-solid fa-xmark text-base"></i></button>
+            </div>
+            <div class="p-6 space-y-4 text-xs">
+                <p class="text-slate-500">Register your organization's formal request for a strategic briefing deck regarding: <strong id="modal-tier-label" class="text-eac-purple">Tier</strong>.</p>
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Company / Institution Name *</label>
+                    <input type="text" placeholder="Abu Dhabi Enterprises" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 focus:outline-none focus:border-purple-500 transition">
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Official Corporate Email *</label>
+                    <input type="email" placeholder="csr@company.ae" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2 focus:outline-none focus:border-purple-500 transition">
+                </div>
+                <button onclick="submitSponsorshipIntent()" class="w-full bg-eac-purple text-white font-bold py-2.5 rounded-lg shadow-md">Dispatched Request Packet</button>
+            </div>
+        </div>
+    </div>
 
     <!-- SCRIPT CONTROLLERS -->
     <script>
@@ -307,6 +399,20 @@
             if(activeNav) activeNav.classList.add('font-semibold', 'text-eac-purple');
             
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function openSponsorshipIntent(tierName) {
+            document.getElementById('modal-tier-label').innerText = tierName;
+            document.getElementById('sponsor-modal').classList.remove('hidden');
+        }
+
+        function closeSponsorshipModal() {
+            document.getElementById('sponsor-modal').classList.add('hidden');
+        }
+
+        function submitSponsorshipIntent() {
+            alert('Your institutional intent has been transmitted to our corporate alliances division. A comprehensive briefing dossier and audited governance overview will be securely dispatched to your corporate inbox.');
+            closeSponsorshipModal();
         }
     </script>
 </body>
